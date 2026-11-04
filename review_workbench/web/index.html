@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>澄水 · ESG 全流程工作台</title>
+  <link rel="stylesheet" href="/styles.css"><script src="/app.js" defer></script><script src="/pipeline.js" defer></script><script src="/batch.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">跳到复核内容</a>
+<aside class="sidebar" aria-label="工作台导航">
+  <a class="brand" href="/" aria-label="澄水工作台首页"><span class="brand-mark" aria-hidden="true">澄</span><span>澄水<span class="brand-en">ESG REVIEW</span></span></a>
+  <p class="side-label">研究工作空间</p>
+  <a class="nav-active" href="#main">ESG 全流程工作台 <span aria-hidden="true">↗</span></a>
+  <div class="side-heading"><h2>最近的审查</h2><button id="refresh" class="text-button" type="button">刷新</button></div>
+  <div id="runs" class="runs"><p class="muted">尚无审查记录</p></div>
+  <div class="side-bottom"><a href="/api/schemas/bundle.schema.json">下载输入契约 ↓</a><a href="/api/example">下载示例输入 ↓</a><p>本机保存 · 原文留存<br>独立版 1.0</p></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><span>水资源研究 <span class="muted">/</span> 审查与人工复核</span><select id="run-picker" aria-label="切换历史审查"><option value="">选择历史审查</option></select><span class="local-dot">本地工作台</span></header>
+  <main id="main" tabindex="-1">
+    <div class="page-heading"><div><p class="eyebrow">PDF → DATA → REVIEW</p><h1>从报告，到有据可查的数据。</h1><p class="subtitle">提取、A归类、B审查与人工复核，在同一个工作台完成。</p></div><div class="heading-actions"><button id="demo" class="button secondary" type="button">体验完整演示</button><label class="button secondary file-label" for="upload">导入历史数据 ＋</label><input id="upload" type="file" accept=".json,application/json" class="file-input"></div></div>
+    <section class="panel pipeline-panel" aria-labelledby="batch-title">
+      <div class="pipeline-heading"><div><p class="eyebrow">BATCH QUEUE</p><h2 id="batch-title">批量处理 ESG 报告</h2><p class="muted">一次添加多份PDF，按顺序完成提取、A归类、B审查和年度归集。单份失败后继续下一份。</p></div></div>
+      <form id="batch-form">
+        <div class="pipeline-fields"><div><label for="batch-upload">多选上传 PDF（每批最多100份）</label><input id="batch-upload" type="file" multiple accept=".pdf,application/pdf"><p class="form-help">每份最大64 MB，先逐份保存到本机；文件名以5位股票代码开头可自动识别。</p></div><div><label for="batch-year">新增报告默认财年</label><input id="batch-year" type="number" min="2000" max="2100" value="2025" required><p class="form-help">下表可逐份修改公司代码与财年；不会按下载日期推定财年。</p></div></div>
+        <details><summary>从已有报告添加（可按Ctrl或Shift多选）</summary><label for="batch-existing">已有报告</label><select id="batch-existing" multiple size="4"></select><button id="batch-add-existing" class="button secondary" type="button">添加所选报告</button></details>
+        <p id="batch-upload-status" class="form-help" role="status" aria-live="polite">尚未添加报告。</p>
+        <div id="batch-draft-wrap" class="pipeline-table-wrap" hidden tabindex="0"><table class="pipeline-table batch-draft"><caption>待提交报告：可逐份修改</caption><thead><tr><th scope="col">报告</th><th scope="col">公司代码</th><th scope="col">财年</th><th scope="col">上传状态</th><th scope="col">操作</th></tr></thead><tbody id="batch-draft-body"></tbody></table></div>
+        <div class="pipeline-fields"><div><label for="batch-mode">处理方式</label><select id="batch-mode"><option value="rules_only">复用新版缓存 · 不调用API</option><option value="model">模型读PDF · 提取归类与B审查</option></select></div><p id="batch-budget-summary" class="form-help" role="status">缓存模式不调用API。</p></div>
+        <fieldset id="batch-model-options" hidden><legend>本批模型范围与费用估算</legend>
+          <div class="pipeline-fields"><div><label for="batch-a-calls">每份提取/归类调用上限</label><input id="batch-a-calls" type="number" min="0" max="20" value="4"></div><div><label for="batch-b-calls">每份B审查调用上限</label><input id="batch-b-calls" type="number" min="0" max="20" value="6"></div></div>
+          <details><summary>填写人民币单价，估算每份费用（可留空）</summary><p class="form-help">单位：元/百万token。请按你的阿里账户价格填写；本估算不计缓存优惠、阶梯价格或其他计费项目，以阿里账单为准。留空显示未知，不算作零费用。</p>
+            <div class="pipeline-fields"><div><label for="batch-extract-input">提取模型输入单价</label><input id="batch-extract-input" type="number" min="0" max="100000" step="any"></div><div><label for="batch-extract-output">提取模型输出单价</label><input id="batch-extract-output" type="number" min="0" max="100000" step="any"></div><div><label for="batch-audit-input">B模型输入单价</label><input id="batch-audit-input" type="number" min="0" max="100000" step="any"></div><div><label for="batch-audit-output">B模型输出单价</label><input id="batch-audit-output" type="number" min="0" max="100000" step="any"></div></div>
+            <label for="batch-price-note">价格来源或适用日期</label><input id="batch-price-note" type="text" maxlength="300" placeholder="例如：本账户控制台价格，2026-11-03">
+          </details>
+          <label class="check-label"><input id="batch-consent" type="checkbox">我允许将本批所列全部报告的完整PDF（按需分块）及必要证据发送至阿里云，按上述每份上限调用，可能产生费用。</label>
+        </fieldset>
+        <div class="pipeline-actions"><button id="batch-start" type="submit" class="button primary" disabled>开始批量处理</button><button id="batch-clear" type="button" class="button secondary">清空待提交列表</button><button id="batch-cancel" type="button" class="button secondary" hidden>停止当前队列</button></div>
+      </form>
+      <p id="batch-error" class="notice error" role="alert" hidden></p>
+      <div id="batch-result" hidden><p id="batch-state" role="status" aria-live="polite"></p><progress id="batch-progress" max="1" value="0" aria-label="批量处理完成进度"></progress><p id="batch-usage" class="form-help"></p><div class="pipeline-pagination"><a id="batch-export" class="button primary" hidden>导出本批2025表 ↓</a><a id="batch-receipt" class="button secondary">导出逐份用量与错误记录 ↓</a></div><div class="pipeline-table-wrap" tabindex="0"><table class="pipeline-table"><caption>本批逐份进度、用量与错误</caption><thead><tr><th scope="col">报告 / 公司 / 财年</th><th scope="col">阶段与状态</th><th scope="col">用量与费用估算</th><th scope="col">错误或处理说明</th><th scope="col">结果</th></tr></thead><tbody id="batch-results-body"></tbody></table></div></div>
+      <details class="pipeline-history"><summary>历史批量队列</summary><div id="batch-history"></div></details>
+    </section>
+    <section class="panel pipeline-panel" aria-labelledby="pipeline-title">
+      <div class="pipeline-heading"><div><p class="eyebrow">ONE WORKSPACE · FULL PROCESS</p><h2 id="pipeline-title">开始处理一份 ESG 报告</h2><p id="pipeline-capability" class="muted">正在检查运行环境…</p></div><span class="pipeline-tag">水资源配置</span></div>
+      <form id="pipeline-form">
+        <div class="pipeline-fields"><div><label for="pipeline-source">选择已有报告</label><select id="pipeline-source"><option value="">请选择报告，或在右侧上传</option></select></div><div><label for="pipeline-upload">上传新 PDF</label><input id="pipeline-upload" type="file" accept=".pdf,application/pdf" aria-describedby="pipeline-upload-help"><p id="pipeline-upload-help" class="form-help">最大64 MB；只保存在本机。相同PDF优先复用已有提取结果。</p></div></div>
+        <div class="pipeline-fields"><div><label for="pipeline-company">股票代码（5位）</label><input id="pipeline-company" type="text" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="按文件名或缓存自动识别"></div><div><label for="pipeline-year">报告财年</label><input id="pipeline-year" type="number" min="2000" max="2100" value="2025" required></div></div>
+        <div class="pipeline-fields"><div><label for="pipeline-mode">新版EsgAgent处理方式</label><select id="pipeline-mode"><option value="rules_only">复用新版缓存 · 不调用API</option><option value="model">模型直读PDF · 提取归类与B审查</option></select></div><p class="form-help pipeline-mode-help" id="pipeline-mode-help">仅复用新版缓存；无匹配缓存时需授权模型读取，不再运行旧版提取器。</p></div>
+        <fieldset id="pipeline-api-options" class="pipeline-api" hidden><legend>模型调用范围</legend><label class="check-label" hidden><input id="pipeline-vision" type="checkbox"> 新版已直接理解PDF图表</label><div class="pipeline-budgets"><div hidden><label for="pipeline-vision-calls">旧视觉调用上限</label><input id="pipeline-vision-calls" type="number" min="0" max="100" value="0"></div><div><label for="pipeline-a-calls">新版提取/归类调用上限</label><input id="pipeline-a-calls" type="number" min="0" max="20" value="4" required></div><div><label for="pipeline-b-calls">B审查调用上限</label><input id="pipeline-b-calls" type="number" min="0" max="20" value="6" required></div></div><label class="check-label"><input id="pipeline-consent" type="checkbox"> 我允许将当前所选完整PDF（大报告按原页分块）及必要证据发送到阿里云，按上述上限调用并产生费用。</label><p class="form-help">提取使用qwen3.8-flash，现有B使用qwen3.7-plus；实际请求按次数记账，SDK自动重试已关闭。已有新版缓存直接复用。研究草稿与B审核状态分开保存。</p></fieldset>
+        <div class="pipeline-actions"><button id="pipeline-start" class="button primary" type="submit" disabled>运行完整流程</button><button id="pipeline-view" class="button secondary" type="button" disabled>查看已有结果</button><button id="pipeline-cancel" class="button secondary" type="button" hidden>停止后续步骤</button></div>
+      </form>
+      <p id="pipeline-error" class="notice error" role="alert" hidden></p>
+      <div id="pipeline-progress" class="pipeline-progress" hidden><ol id="pipeline-steps" class="pipeline-steps" aria-label="处理步骤"><li data-stages="QUEUED,EXTRACT"><span>1</span>提取数据</li><li data-stages="FILTER,CLASSIFY"><span>2</span>A过滤与归类</li><li data-stages="AUDIT,VALIDATE"><span>3</span>B独立审查</li><li data-stages="IMPORT_REVIEW,FINISHED"><span>4</span>人工复核</li></ol><p id="pipeline-job-state" role="status" aria-live="polite"></p><p id="pipeline-job-usage" class="form-help"></p></div>
+      <details class="pipeline-history"><summary>最近的流程任务</summary><div id="pipeline-jobs"><p class="muted">尚无流程任务。</p></div></details>
+    </section>
+    <section id="pipeline-data" class="panel pipeline-panel" hidden aria-labelledby="pipeline-data-title"><div class="pipeline-heading"><div><h2 id="pipeline-data-title">全过程数据</h2><p id="pipeline-data-summary" class="muted"></p></div><a id="pipeline-export" class="button secondary">导出完整流程包 ↓</a></div><div class="pipeline-tabs" role="tablist" aria-label="查看处理阶段"><button id="pipeline-tab-extract" type="button" role="tab" aria-selected="true" aria-controls="pipeline-table-wrap" tabindex="0">提取数据</button><button id="pipeline-tab-classify" type="button" role="tab" aria-selected="false" aria-controls="pipeline-table-wrap" tabindex="-1">A归类结果</button><button id="pipeline-tab-review" type="button" role="tab" aria-selected="false" aria-controls="pipeline-review-intro" tabindex="-1">B审查与人工复核</button></div><p id="pipeline-data-note" class="form-help">数值均为待复核候选；提取数量不等于独立指标数。</p><div id="pipeline-table-wrap" class="pipeline-table-wrap" role="tabpanel" aria-labelledby="pipeline-tab-extract" tabindex="0"><table class="pipeline-table"><caption id="pipeline-table-caption">提取候选</caption><thead id="pipeline-table-head"></thead><tbody id="pipeline-table-body"></tbody></table></div><div id="pipeline-pagination" class="pipeline-pagination"><button id="pipeline-prev" class="button secondary" type="button">上一页</button><span id="pipeline-page-count" role="status"></span><button id="pipeline-next" class="button secondary" type="button">下一页</button></div><div id="pipeline-review-intro" role="tabpanel" aria-labelledby="pipeline-tab-review" hidden><p>下方是B独立审查和人工复核区，可对照原文、填写意见并保留历史。信息不足不等于公司没有披露。</p><button id="pipeline-to-review" class="button primary" type="button">进入下方复核队列</button></div></section>
+    <dialog id="pipeline-image-dialog" aria-labelledby="pipeline-image-title"><div class="pipeline-heading"><h2 id="pipeline-image-title">原页截图</h2><button id="pipeline-image-close" class="button secondary" type="button">关闭</button></div><p class="form-help">物理PDF页码；请对照行列、单位、年份及统计范围。</p><img id="pipeline-image" alt=""><a id="pipeline-image-pdf" target="_blank" rel="noopener">打开完整 PDF ↗</a></dialog>
+    <section class="panel pipeline-panel" aria-labelledby="water-title">
+      <div class="pipeline-heading"><div><h2 id="water-title">2025 年度水资源数据</h2><p class="muted">公司 × 财年归集；严格沿用原模板15列。空白有原因，信息不足不等于未披露。</p></div></div>
+      <div class="pipeline-pagination"><button id="water-preview" class="button secondary" type="button">查看当前报告填表状态</button><button id="water-preview-all" class="button secondary" type="button">汇总已有报告</button><a id="water-export-all" href="/api/water/2025.xlsx" class="button primary">导出已有公司2025表 ↓</a><a href="/api/water/2025.xlsx?all_companies=1" class="button secondary">导出全底册（含无报告公司）↓</a></div>
+      <details id="water-legacy-tools" class="advanced-tools"><summary>旧版历史数据：使用LLM二次筛选</summary>
+        <p class="form-help">先选择已有流程结果的报告。复用已提取内容，A筛选字段，B对照原页核对；通过的研究值进入导出，仍不自动用于评分。</p>
+        <div class="pipeline-pagination"><label for="water-a-calls">A调用上限 <input id="water-a-calls" type="number" min="1" max="8" value="2"></label><label for="water-b-calls">B调用上限 <input id="water-b-calls" type="number" min="1" max="8" value="2"></label></div>
+        <label><input id="water-vision" type="checkbox" checked> B核对原始PDF页图</label>
+        <label><input id="water-consent" type="checkbox"> 允许当前所选报告的必要证据、数值和可选原页发送至阿里API，最多为上述A、B次数之和，可能产生费用。</label>
+        <button id="water-run" type="button" class="button primary">筛选并填表（当前报告）</button>
+      </details>
+      <p id="water-status" class="form-help" role="status" aria-live="polite">可先查看状态。导出包括通过A/B核对的研究值，近似与来源保存在台账，不计算评分。</p>
+      <div id="water-preview-wrap" class="pipeline-table-wrap" hidden tabindex="0"><table class="pipeline-table"><caption>2025填表状态与缺失原因</caption><thead><tr><th scope="col">公司代码</th><th scope="col">指标字段</th><th scope="col">采用值</th><th scope="col">状态 / 原因</th><th scope="col">来源</th></tr></thead><tbody id="water-preview-body"></tbody></table></div>
+    </section>
+    <div id="notice" class="notice" role="status" aria-live="polite" aria-atomic="true">在上方选择或上传PDF，启动完整流程；已有结果可直接查看。</div>
+    <details class="advanced-tools"><summary>高级工具：导入历史A/B文件或运行B合成示例</summary>
+    <section class="panel b-panel" aria-labelledby="b-title">
+      <div class="b-intro"><div><p class="eyebrow">INDEPENDENT AUDITOR · B</p><h2 id="b-title">B 独立审查</h2><p class="muted">先体验合成演示，或导入已有审查结果，在下方对照证据并复核。</p></div><button id="b-demo" class="button primary" type="button">运行 B 合成演示</button></div>
+      <div class="b-import"><label for="b-files">选择 B 数据文件（可多选）</label><input id="b-files" type="file" multiple accept=".json,.jsonl" aria-describedby="b-help b-file-state"><p id="b-help" class="form-help">查看结果：选择 audit_findings.jsonl、audit_results.jsonl、audit_report.json、review_items.jsonl。可一并附加 records.jsonl、evidence.jsonl、document_context.json、catalogue.json，显示原始值与证据。文本合计上限 7 MB。</p><p id="b-file-state" class="form-help" role="status">尚未选择文件。</p></div>
+      <div class="b-actions"><button id="b-import" class="button secondary" type="button" disabled>导入 B 结果并复核</button><button id="b-run" class="button secondary" type="button" disabled>使用所选输入运行 B 审查</button></div>
+      <p id="b-config" class="form-help">正在检查B接入配置…</p><p class="form-help">页面运行需选择 records.jsonl、evidence.jsonl、semantic_filter.jsonl、document_context.json；仅在本机配置A侧正式契约与客户端后启用。原型演示入口仍保留在页面上方。</p>
+    </section>
+    </details>
+    <section class="report-bar" aria-label="当前报告"><div><p class="eyebrow" id="report-tag">尚未选择报告</p><h2 id="company">你的第一份审查，从这里开始</h2><p id="report-meta" class="muted">演示使用合成数据，不代表任何真实公司的披露。</p></div><div class="run-controls"><label for="mode">审查方式</label><select id="mode"><option value="offline">离线 · 转人工复核</option><option value="http" disabled>真实模型 · 尚未配置</option></select><button id="audit" class="button primary" type="button" disabled>启动审查</button><a id="export" class="button secondary disabled" aria-disabled="true">导出审查包 ↓</a></div></section>
+    <section class="stats" aria-label="审查概览"><div class="stat"><span>待处理阻断</span><strong id="block-count">—</strong><small>需优先核对的任务</small></div><div class="stat"><span>待人工处理</span><strong id="open-count">—</strong><small>含不确定及修订待重审</small></div><div class="stat"><span>指标记录</span><strong id="record-count">—</strong><small>保留全部原始归类结果</small></div><div class="stat"><span>原始证据</span><strong id="evidence-count">—</strong><small>每一条均可回看原文</small></div></section>
+    <div class="section-heading"><h2>证据与审查</h2><p id="run-state" class="muted">等待导入</p></div>
+    <section id="b-summary" class="panel b-summary" hidden aria-label="B运行汇总"><h3>B 运行汇总</h3><p id="b-summary-text"></p><details><summary>待自动核验台账（不属于人工任务）</summary><p class="form-help">以下记录没有可定位的具体审查差异，仍保留原B状态，等待自动核验完善，不作为正式确认值。</p><div class="pipeline-table-wrap" tabindex="0"><table class="pipeline-table"><caption>待自动核验记录</caption><thead><tr><th scope="col">指标</th><th scope="col">年度</th><th scope="col">提取值</th><th scope="col">原B状态</th></tr></thead><tbody id="b-unverified-records"></tbody></table></div></details><details><summary id="b-problems-title">运行提示与不足原因</summary><ul id="b-problems"></ul></details><label for="b-pdf">附加原始 PDF（只读对照，最大 64 MB）</label><input id="b-pdf" type="file" accept=".pdf,application/pdf"><p class="form-help">附件供原页核对使用，不会触发视觉模型重审；请确认附件与当前报告一致。</p></section>
+    <div class="review-grid">
+      <section class="panel queue-panel" aria-labelledby="queue-title"><div class="panel-heading"><h3 id="queue-title">复核队列</h3><span id="queue-count" class="count">0</span></div><label class="sr-only" for="filter">筛选复核任务</label><select id="filter"><option value="ALL">全部任务</option><option value="OPEN">待处理</option><option value="P0">优先阻断</option><option value="RESOLVED">已人工确认</option><option value="REAUDIT_REQUIRED">修订待重审</option><option value="EXCLUDED_FROM_SCORING">已申请排除评分</option></select><div id="queue" class="queue"><p class="empty">导入后，需复核的记录会出现在这里。</p></div></section>
+      <section class="panel evidence-panel" aria-labelledby="evidence-title"><div class="panel-heading"><h3 id="evidence-title">原文证据</h3><span class="micro">只读</span></div><div id="record"></div><div id="evidence"><div class="empty evidence-empty"><span class="empty-symbol" aria-hidden="true">≋</span><h4>先看证据，再作判断</h4><p>选择左侧任务，在这里对照提取值、原文与披露口径。</p></div></div></section>
+      <section class="panel decision-panel" aria-labelledby="decision-title"><div class="panel-heading"><h3 id="decision-title">审查与处置</h3><span class="micro">保留历史</span></div><div id="findings"><p class="empty">审查意见会与对应证据一起呈现。</p></div>
+        <form id="review-form" hidden><h4>人工复核</h4><p class="form-help">修订仅生成请求，需回到上游创建新版本并重新审查。</p><label for="reviewer">复核人</label><input id="reviewer" required maxlength="80" autocomplete="name" placeholder="填写你的姓名"><label for="action">处置方式</label><select id="action"><option value="DEFER">暂缓 · 需要更多信息</option><option value="KEEP">保留 · 已核对原文</option><option value="CORRECT_VALUE">修订数值 · 提交重审</option><option value="REMAP">修订变量 · 提交重审</option><option value="EXCLUDE_FROM_SCORING">申请排除评分</option></select><div id="value-field" hidden><label for="new-value">候选修订值</label><input id="new-value" type="number" step="any" placeholder="允许填写真实的 0"></div><div id="variable-field" hidden><label for="new-variable">候选变量</label><select id="new-variable"></select></div><label for="reason">依据与说明</label><textarea id="reason" required maxlength="2000" rows="3" placeholder="说明核对的原文、页码及处理依据"></textarea><button id="save" type="submit" class="button primary wide">保存复核意见</button><p id="form-state" class="form-help"></p></form>
+        <div id="history"></div>
+      </section>
+    </div>
+    <footer>审查不改写原始记录。人工确认后仍需 S5 验证；此工作台不计算水资源评分。<span id="integrity"></span></footer>
+  </main>
+</div>
+</body></html>

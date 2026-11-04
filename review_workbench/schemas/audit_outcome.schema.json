@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "audit_run_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "pid": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "indicator_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "batch": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "policy_version": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "record_verdicts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "record_uid": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "indicator_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "verdict": {
+            "enum": [
+              "CONFIRMED",
+              "SUSPECT",
+              "REJECTED",
+              "INSUFFICIENT"
+            ]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 512
+          },
+          "finding_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 240
+            },
+            "minItems": 0,
+            "maxItems": 100
+          }
+        },
+        "required": [
+          "record_uid",
+          "indicator_id",
+          "verdict",
+          "reason",
+          "finding_ids"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 20
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 240
+      },
+      "minItems": 0,
+      "maxItems": 100
+    },
+    "stats": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "SUCCEEDED",
+        "PARTIAL",
+        "FAILED"
+      ]
+    },
+    "coverage": {
+      "type": "object",
+      "properties": {
+        "split_group": {
+          "type": "boolean"
+        },
+        "evidence_omitted": {
+          "type": "boolean"
+        },
+        "catalogue_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        }
+      },
+      "required": [
+        "split_group",
+        "evidence_omitted",
+        "catalogue_version"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "audit_run_id",
+    "pid",
+    "indicator_id",
+    "batch",
+    "policy_version",
+    "record_verdicts",
+    "findings",
+    "stats",
+    "status",
+    "coverage"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,564 @@
+{
+ "schema_version": "3.0",
+ "pipeline_version": "agent-filter-0.1.0",
+ "pid": "00855_2025073000035",
+ "classification_run_id": "cr_00855_2025073000035_20261029T182856",
+ "status": "PARTIAL",
+ "fatal": false,
+ "degraded": true,
+ "truncated": false,
+ "created_at": "2026-10-29T18:30:53Z",
+ "prompt": {
+  "prompt_template_version": "classify-prompt-3.2.0",
+  "template_sha256": "2db002e9e62b934cfe50aca4b14e2f80dce3936bffb6744fe871763c6b6b772d",
+  "prompt_sha256": "584454918282d7efa3489e262e69b0716a1c6af00bb62aa6811d7efa92a60e30",
+  "n_prompts": 2
+ },
+ "profile_version": "WATER-1.0.0",
+ "profiles": [
+  {
+   "profile_id": "water_v1",
+   "profile_version": "WATER-1.0.0",
+   "domain": "water",
+   "n_fields": 15,
+   "export_columns": [
+    "stock_code",
+    "company_name",
+    "sasb_sector",
+    "sasb_industry",
+    "revenue_million",
+    "revenue_currency",
+    "water_withdrawal_m3",
+    "water_consumption_m3",
+    "water_recycling_rate_pct",
+    "water_recycled_reused_m3",
+    "water_discharge_m3",
+    "cod_discharge_t",
+    "ammonia_n_discharge_t",
+    "total_n_discharge_t",
+    "total_p_discharge_t"
+   ],
+   "sha256": "ba14e0b04893ff31298f0768288ca813c6306831cb0ab099847a9584cc90a8e6",
+   "source": "/Users/wujielin/ESG/ESGData-quantitative-skill/config/metric_profiles/water_v1.yaml"
+  }
+ ],
+ "policy": {
+  "profile_version": "WATER-1.0.0",
+  "batch_size": 20,
+  "temperature": 0.0,
+  "max_model_calls": null,
+  "max_tokens": null,
+  "review_blocks_classification": false,
+  "strict_profile_fields": true,
+  "allow_ambiguous": true,
+  "enabled_profiles": [
+   "water_v1"
+  ],
+  "profile_export": true,
+  "company_master_path": "/Users/wujielin/ESG/ESGData-quantitative-skill/company_master",
+  "max_workers": 4,
+  "request_max_tokens": 24576,
+  "timeout_s": 420,
+  "max_attempts": 3,
+  "key_fields": [
+   "water_withdrawal_m3",
+   "water_consumption_m3",
+   "water_discharge_m3"
+  ],
+  "max_unclassified_hints": 5
+ },
+ "policy_fingerprint": "15599d14f20f04f311db28b51fe9b79e306e13c30b9193a91bd8327ff03806cd",
+ "llm": {
+  "mode": "dashscope",
+  "enabled": true,
+  "model_id": "qwen3.7-max",
+  "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "api_key_configured": true,
+  "timeout_s": 420,
+  "max_attempts": 3,
+  "max_tokens": 24576,
+  "enable_thinking": true,
+  "budget": {
+   "max_model_calls": null,
+   "used_model_calls": 2,
+   "used_tokens": 53775,
+   "truncated": false
+  }
+ },
+ "input": {
+  "pid_dir": "intermediate/esg_agents/00855_2025073000035",
+  "source": "auto",
+  "evidence": 45,
+  "by_kind": {
+   "text": 29,
+   "table_cell": 16
+  },
+  "source_format": [
+   "v1_numeric_blocks"
+  ],
+  "zero_claim": 3,
+  "evidence_sha": "7cc97b1472130e4561c8be42415fe611675137e30e767332dd3dbf803affb198",
+  "decisions": 45,
+  "accepted": 31,
+  "review": 5,
+  "excluded": 9,
+  "stale_decisions": 0,
+  "missing_decisions": 0,
+  "candidates": 36,
+  "filter_run_id": "fr_00855_2025073000035_20261029T172124",
+  "filter_run_id_source": "filter_report.json",
+  "filter_policy_version": "FP-3.4.0",
+  "filter_report_status": "SUCCEEDED",
+  "company_master": {
+   "configured": true,
+   "source": "identity.json",
+   "path": "intermediate/esg_agents/00855_2025073000035/identity.json"
+  },
+  "identity": {
+   "present": true,
+   "company_name": "China Water Affairs Group Limited",
+   "stock_code": "00855",
+   "company_name_source_evidence_id": "00855_2025073000035_e00007",
+   "stock_code_source_evidence_id": "00855_2025073000035_e00006",
+   "stock_code_source": "EVIDENCE",
+   "kept_evidence_version_ids": [],
+   "duplicate_evidence_count": 0,
+   "source": "identity.json"
+  },
+  "input_root": null,
+  "document_overrides": {}
+ },
+ "outcome": {
+  "schema_version": "3.0",
+  "classification_run_id": "cr_00855_2025073000035_20261029T182856",
+  "pid": "00855_2025073000035",
+  "profile_version": "WATER-1.0.0",
+  "stats": {
+   "input": 36,
+   "recorded": 10,
+   "no_record": 26,
+   "failed": 0,
+   "assigned": 12,
+   "ambiguous": 0,
+   "unmapped": 6,
+   "insufficient_context": 3,
+   "model_calls": 2
+  },
+  "n_records": 21,
+  "n_coverage": 36,
+  "status": "PARTIAL",
+  "degraded": true,
+  "truncated": false,
+  "fatal": false,
+  "problems": [
+   {
+    "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+    "severity": "warn",
+    "message": "表格含数字行 23 行，只归类出 5 条记录，可能漏行（C3.5）",
+    "stage": "classify",
+    "page_no": 7,
+    "evidence_id": "00855_2025073000035_e00007",
+    "record_id": null,
+    "retryable": false,
+    "detail": {
+     "rows_with_numbers": 23,
+     "n_records": 5
+    }
+   },
+   {
+    "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+    "severity": "warn",
+    "message": "表格含数字行 16 行，只归类出 1 条记录，可能漏行（C3.5）",
+    "stage": "classify",
+    "page_no": 13,
+    "evidence_id": "00855_2025073000035_e00014",
+    "record_id": null,
+    "retryable": false,
+    "detail": {
+     "rows_with_numbers": 16,
+     "n_records": 1
+    }
+   },
+   {
+    "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+    "severity": "warn",
+    "message": "表格含数字行 17 行，只归类出 1 条记录，可能漏行（C3.5）",
+    "stage": "classify",
+    "page_no": 16,
+    "evidence_id": "00855_2025073000035_e00017",
+    "record_id": null,
+    "retryable": false,
+    "detail": {
+     "rows_with_numbers": 17,
+     "n_records": 1
+    }
+   },
+   {
+    "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+    "severity": "warn",
+    "message": "表格含数字行 5 行，只归类出 1 条记录，可能漏行（C3.5）",
+    "stage": "classify",
+    "page_no": 18,
+    "evidence_id": "00855_2025073000035_e00019",
+    "record_id": null,
+    "retryable": false,
+    "detail": {
+     "rows_with_numbers": 5,
+     "n_records": 1
+    }
+   },
+   {
+    "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+    "severity": "warn",
+    "message": "表格含数字行 9 行，只归类出 6 条记录，可能漏行（C3.5）",
+    "stage": "classify",
+    "page_no": 19,
+    "evidence_id": "00855_2025073000035_e00020",
+    "record_id": null,
+    "retryable": false,
+    "detail": {
+     "rows_with_numbers": 9,
+     "n_records": 6
+    }
+   },
+   {
+    "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+    "severity": "warn",
+    "message": "表格含数字行 11 行，只归类出 1 条记录，可能漏行（C3.5）",
+    "stage": "classify",
+    "page_no": 20,
+    "evidence_id": "00855_2025073000035_e00021",
+    "record_id": null,
+    "retryable": false,
+    "detail": {
+     "rows_with_numbers": 11,
+     "n_records": 1
+    }
+   },
+   {
+    "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+    "severity": "warn",
+    "message": "表格含数字行 24 行，只归类出 2 条记录，可能漏行（C3.5）",
+    "stage": "classify",
+    "page_no": 22,
+    "evidence_id": "00855_2025073000035_e00023",
+    "record_id": null,
+    "retryable": false,
+    "detail": {
+     "rows_with_numbers": 24,
+     "n_records": 2
+    }
+   },
+   {
+    "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+    "severity": "warn",
+    "message": "表格含数字行 7 行，只归类出 1 条记录，可能漏行（C3.5）",
+    "stage": "classify",
+    "page_no": 24,
+    "evidence_id": "00855_2025073000035_e00025",
+    "record_id": null,
+    "retryable": false,
+    "detail": {
+     "rows_with_numbers": 7,
+     "n_records": 1
+    }
+   }
+  ]
+ },
+ "stats": {
+  "input": 36,
+  "recorded": 10,
+  "no_record": 26,
+  "failed": 0,
+  "assigned": 12,
+  "ambiguous": 0,
+  "unmapped": 6,
+  "insufficient_context": 3,
+  "model_calls": 2
+ },
+ "status_distribution": {
+  "UNMAPPED": 6,
+  "ASSIGNED": 12,
+  "INSUFFICIENT_CONTEXT": 3
+ },
+ "coverage_summary": {
+  "key_fields": [
+   "water_withdrawal_m3",
+   "water_consumption_m3",
+   "water_discharge_m3"
+  ],
+  "by_field": {
+   "ammonia_n_discharge_t": {
+    "n_records": 3,
+    "n_keyword_hits": 1,
+    "n_unclassified_hits": 0
+   },
+   "revenue_million": {
+    "n_records": 6,
+    "n_keyword_hits": 5,
+    "n_unclassified_hits": 0
+   },
+   "water_withdrawal_m3": {
+    "n_records": 1,
+    "n_keyword_hits": 3,
+    "n_unclassified_hits": 0
+   },
+   "water_recycling_rate_pct": {
+    "n_records": 0,
+    "n_keyword_hits": 1,
+    "n_unclassified_hits": 1
+   },
+   "water_consumption_m3": {
+    "n_records": 1,
+    "n_keyword_hits": 2,
+    "n_unclassified_hits": 0
+   },
+   "revenue_currency": {
+    "n_records": 1,
+    "n_keyword_hits": 0,
+    "n_unclassified_hits": 0
+   },
+   "water_recycled_reused_m3": {
+    "n_records": 0,
+    "n_keyword_hits": 0,
+    "n_unclassified_hits": 0
+   },
+   "water_discharge_m3": {
+    "n_records": 0,
+    "n_keyword_hits": 0,
+    "n_unclassified_hits": 0
+   },
+   "cod_discharge_t": {
+    "n_records": 3,
+    "n_keyword_hits": 0,
+    "n_unclassified_hits": 0
+   },
+   "total_n_discharge_t": {
+    "n_records": 0,
+    "n_keyword_hits": 0,
+    "n_unclassified_hits": 0
+   },
+   "total_p_discharge_t": {
+    "n_records": 0,
+    "n_keyword_hits": 0,
+    "n_unclassified_hits": 0
+   }
+  },
+  "missing_profile_fields": [
+   "water_recycling_rate_pct",
+   "water_recycled_reused_m3",
+   "water_discharge_m3",
+   "total_n_discharge_t",
+   "total_p_discharge_t"
+  ],
+  "n_unclassified_hints": 1,
+  "evidence": {
+   "input": 45,
+   "accepted": 31,
+   "review": 5,
+   "excluded": 9,
+   "other": 0,
+   "candidates": 36,
+   "processed": 36,
+   "processed_other": 0,
+   "coverage": 1.0,
+   "candidate_ids_matched": 36
+  },
+  "classification": {
+   "input": 36,
+   "recorded": 10,
+   "no_record": 26,
+   "failed": 0,
+   "processed": 36,
+   "coverage": 1.0
+  },
+  "unclassified": {
+   "unmapped": 6,
+   "ambiguous": 0,
+   "insufficient_context": 3
+  }
+ },
+ "domain_export": {
+  "enabled": true,
+  "rows": 8,
+  "profile_id": "water_v1"
+ },
+ "failures": {
+  "n_problems": 9,
+  "n_error": 0,
+  "n_warn": 8,
+  "coverage_failed": 0,
+  "parse_failures": 0,
+  "budget_exceeded": false
+ },
+ "problems": [
+  {
+   "code": "ERR_COMPANY_SASB_MISSING",
+   "severity": "info",
+   "message": "SASB sector/industry 缺失（identity.json 不提供），对应宽表列留空",
+   "stage": "classify",
+   "page_no": null,
+   "evidence_id": null,
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "pid": "00855_2025073000035",
+    "source": "identity.json"
+   }
+  },
+  {
+   "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+   "severity": "warn",
+   "message": "表格含数字行 23 行，只归类出 5 条记录，可能漏行（C3.5）",
+   "stage": "classify",
+   "page_no": 7,
+   "evidence_id": "00855_2025073000035_e00007",
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "rows_with_numbers": 23,
+    "n_records": 5
+   }
+  },
+  {
+   "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+   "severity": "warn",
+   "message": "表格含数字行 16 行，只归类出 1 条记录，可能漏行（C3.5）",
+   "stage": "classify",
+   "page_no": 13,
+   "evidence_id": "00855_2025073000035_e00014",
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "rows_with_numbers": 16,
+    "n_records": 1
+   }
+  },
+  {
+   "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+   "severity": "warn",
+   "message": "表格含数字行 17 行，只归类出 1 条记录，可能漏行（C3.5）",
+   "stage": "classify",
+   "page_no": 16,
+   "evidence_id": "00855_2025073000035_e00017",
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "rows_with_numbers": 17,
+    "n_records": 1
+   }
+  },
+  {
+   "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+   "severity": "warn",
+   "message": "表格含数字行 5 行，只归类出 1 条记录，可能漏行（C3.5）",
+   "stage": "classify",
+   "page_no": 18,
+   "evidence_id": "00855_2025073000035_e00019",
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "rows_with_numbers": 5,
+    "n_records": 1
+   }
+  },
+  {
+   "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+   "severity": "warn",
+   "message": "表格含数字行 9 行，只归类出 6 条记录，可能漏行（C3.5）",
+   "stage": "classify",
+   "page_no": 19,
+   "evidence_id": "00855_2025073000035_e00020",
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "rows_with_numbers": 9,
+    "n_records": 6
+   }
+  },
+  {
+   "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+   "severity": "warn",
+   "message": "表格含数字行 11 行，只归类出 1 条记录，可能漏行（C3.5）",
+   "stage": "classify",
+   "page_no": 20,
+   "evidence_id": "00855_2025073000035_e00021",
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "rows_with_numbers": 11,
+    "n_records": 1
+   }
+  },
+  {
+   "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+   "severity": "warn",
+   "message": "表格含数字行 24 行，只归类出 2 条记录，可能漏行（C3.5）",
+   "stage": "classify",
+   "page_no": 22,
+   "evidence_id": "00855_2025073000035_e00023",
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "rows_with_numbers": 24,
+    "n_records": 2
+   }
+  },
+  {
+   "code": "ERR_CLASSIFY_TABLE_ROW_GAP",
+   "severity": "warn",
+   "message": "表格含数字行 7 行，只归类出 1 条记录，可能漏行（C3.5）",
+   "stage": "classify",
+   "page_no": 24,
+   "evidence_id": "00855_2025073000035_e00025",
+   "record_id": null,
+   "retryable": false,
+   "detail": {
+    "rows_with_numbers": 7,
+    "n_records": 1
+   }
+  }
+ ],
+ "artifacts": {
+  "dry_run": false,
+  "planned": {
+   "records": "intermediate/esg_agents/00855_2025073000035/records.jsonl",
+   "classification_outcome": "intermediate/esg_agents/00855_2025073000035/classification_outcome.jsonl",
+   "classification_report": "intermediate/esg_agents/00855_2025073000035/classification_report.json",
+   "coverage": "intermediate/esg_agents/00855_2025073000035/coverage.json",
+   "domain_export": "intermediate/esg_agents/00855_2025073000035/domain_export.jsonl"
+  },
+  "classification_report": {
+   "path": "intermediate/esg_agents/00855_2025073000035/classification_report.json"
+  },
+  "records": {
+   "path": "intermediate/esg_agents/00855_2025073000035/records.jsonl",
+   "bytes": 34566,
+   "rows": 21
+  },
+  "classification_outcome": {
+   "path": "intermediate/esg_agents/00855_2025073000035/classification_outcome.jsonl",
+   "bytes": 13039,
+   "rows": 36
+  },
+  "coverage": {
+   "path": "intermediate/esg_agents/00855_2025073000035/coverage.json",
+   "bytes": 3253
+  },
+  "domain_export": {
+   "path": "intermediate/esg_agents/00855_2025073000035/domain_export.jsonl",
+   "bytes": 14676,
+   "rows": 8
+  },
+  "archive_dir": "intermediate/esg_agents/00855_2025073000035/runs/cr_00855_2025073000035_20261029T182856"
+ },
+ "timings_ms": {
+  "load_input_ms": 2,
+  "classify_ms": 117362,
+  "coverage_ms": 16,
+  "export_ms": 0,
+  "validate_ms": 27,
+  "write_ms": 5,
+  "total_ms": 117437
+ }
+}

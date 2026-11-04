@@ -1,0 +1,222 @@
+{
+ "schema_version": "3.0",
+ "pid": "00371_2026042702104",
+ "classification_run_id": "cr_00371_2026042702104_20261029T165117",
+ "profile_version": "WATER-1.0.0",
+ "key_fields": [
+  "water_withdrawal_m3",
+  "water_consumption_m3",
+  "water_discharge_m3"
+ ],
+ "by_field": {
+  "revenue_currency": {
+   "n_records": 0,
+   "n_keyword_hits": 1,
+   "n_unclassified_hits": 1
+  },
+  "revenue_million": {
+   "n_records": 1,
+   "n_keyword_hits": 14,
+   "n_unclassified_hits": 0
+  },
+  "water_consumption_m3": {
+   "n_records": 18,
+   "n_keyword_hits": 7,
+   "n_unclassified_hits": 0
+  },
+  "water_withdrawal_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 4,
+   "n_unclassified_hits": 4
+  },
+  "water_discharge_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 3,
+   "n_unclassified_hits": 3
+  },
+  "total_p_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 3,
+   "n_unclassified_hits": 3
+  },
+  "water_recycled_reused_m3": {
+   "n_records": 2,
+   "n_keyword_hits": 1,
+   "n_unclassified_hits": 0
+  },
+  "total_n_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 3,
+   "n_unclassified_hits": 3
+  },
+  "water_recycling_rate_pct": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "cod_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "ammonia_n_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  }
+ },
+ "unclassified_hints": [
+  {
+   "profile_field": "revenue_currency",
+   "evidence_version_id": "ev_v1_0c670d39_00001",
+   "page_no": 3,
+   "keyword": "Currency",
+   "excerpt": "About this Report As a non-financial report publicly disclosed by Beijing Enterprises Water Group Limited, this report aims at responding to the expectations of stakeholders and comprehensively demonstrating the Group's concepts, management, actions and achievements in environmental, social and gove"
+  },
+  {
+   "profile_field": "water_withdrawal_m3",
+   "evidence_version_id": "ev_v1_0c670d39_00012",
+   "page_no": 15,
+   "keyword": "Water Intake",
+   "excerpt": "High-Quality Water Supply This year, the Group strengthened its leakage control through the coordinated efforts of business planning, technology empowerment, and management collaboration. We guide key projects in formulating annual leakage control plans and promote the pilot application of new techn"
+  },
+  {
+   "profile_field": "water_discharge_m3",
+   "evidence_version_id": "ev_v1_0c670d39_00015",
+   "page_no": 18,
+   "keyword": "Water Discharge",
+   "excerpt": "High-Quality Sewage Treatment In 2025, BEWG launched its \"Digital Star-level\" framework, a data-driven improvement over the traditional model. This upgrade not only refined the evaluation criteria, but also introduced a new \"star-level index\" 10 , so that the Group can have an objective comparison o"
+  },
+  {
+   "profile_field": "total_p_discharge_t",
+   "evidence_version_id": "ev_v1_0c670d39_00015",
+   "page_no": 18,
+   "keyword": "Total Phosphorus",
+   "excerpt": "High-Quality Sewage Treatment In 2025, BEWG launched its \"Digital Star-level\" framework, a data-driven improvement over the traditional model. This upgrade not only refined the evaluation criteria, but also introduced a new \"star-level index\" 10 , so that the Group can have an objective comparison o"
+  },
+  {
+   "profile_field": "water_withdrawal_m3",
+   "evidence_version_id": "ev_v1_0c670d39_00016",
+   "page_no": 19,
+   "keyword": "Water Intake",
+   "excerpt": "Resources Recovery The Group fully embraces the concept of water conservation, strengthens control and management throughout the entire project lifecycle, and systematically promotes the efficient use of water resources with a focus on water conservation and efficiency improvement. We are exploring "
+  },
+  {
+   "profile_field": "water_withdrawal_m3",
+   "evidence_version_id": "ev_v1_0c670d39_00017",
+   "page_no": 20,
+   "keyword": "Water Intake",
+   "excerpt": "Resources Recovery To effectively promote the improvement of the Group's water resource utilisation efficiency, we formulate production water management targets for the water supply and sewage treatment businesses in the Chinese Mainland and monitor the annual progress toward achieving the targets. "
+  },
+  {
+   "profile_field": "total_n_discharge_t",
+   "evidence_version_id": "ev_v1_0c670d39_00067",
+   "page_no": 57,
+   "keyword": "Total Nitrogen",
+   "excerpt": "Low-Carbon Management Low-Carbon Technologies Over the years, leveraging its extensive experience in the field of sewage treatment, the Group has continuously increased investment in R&D of low-carbon processes and control technologies. As a result, we have successfully developed a series of new low"
+  },
+  {
+   "profile_field": "total_p_discharge_t",
+   "evidence_version_id": "ev_v1_0c670d39_00067",
+   "page_no": 57,
+   "keyword": "Total Phosphorus",
+   "excerpt": "Low-Carbon Management Low-Carbon Technologies Over the years, leveraging its extensive experience in the field of sewage treatment, the Group has continuously increased investment in R&D of low-carbon processes and control technologies. As a result, we have successfully developed a series of new low"
+  },
+  {
+   "profile_field": "total_n_discharge_t",
+   "evidence_version_id": "ev_v1_0c670d39_00071",
+   "page_no": 61,
+   "keyword": "Total Nitrogen",
+   "excerpt": "Environmental Impact Management Emission Management The Group strictly complies with national laws and regulations, including the Law on Prevention and Control of Environmental Pollution by Solid Waste , the Water Pollution Prevention and Control Law , the Air Pollution Prevention and Control Law , "
+  },
+  {
+   "profile_field": "water_discharge_m3",
+   "evidence_version_id": "ev_v1_0c670d39_00076",
+   "page_no": 65,
+   "keyword": "Water Discharge",
+   "excerpt": "• Biodiversity Protection • Case \"Regenerate\" Action: Qingquan River Constructed Wetland Project The Qingquan River constructed wetland project in Liaocheng, Shandong adopts a combined process of horizontal subsurface flow and surface flow wetlands, and is primarily used for advanced treatment of ef"
+  },
+  {
+   "profile_field": "total_n_discharge_t",
+   "evidence_version_id": "ev_v1_0c670d39_00078",
+   "page_no": 67,
+   "keyword": "Total Nitrogen",
+   "excerpt": "Environmental Key ESG performance Indicator Unit 2025 2024 2023 Environmental management Major environmental pollution accident / 0 0 0 Pollutants emissions and discharge Total reduction in COD in sewage treatment plants tonne 1,133,215 1,117,822 1,054,379 Total reduction in ammonia nitrogen in sewa"
+  },
+  {
+   "profile_field": "total_p_discharge_t",
+   "evidence_version_id": "ev_v1_0c670d39_00078",
+   "page_no": 67,
+   "keyword": "Total Phosphorus",
+   "excerpt": "Environmental Key ESG performance Indicator Unit 2025 2024 2023 Environmental management Major environmental pollution accident / 0 0 0 Pollutants emissions and discharge Total reduction in COD in sewage treatment plants tonne 1,133,215 1,117,822 1,054,379 Total reduction in ammonia nitrogen in sewa"
+  },
+  {
+   "profile_field": "water_withdrawal_m3",
+   "evidence_version_id": "ev_v1_0c670d39_00085",
+   "page_no": 74,
+   "keyword": "Water Withdrawal",
+   "excerpt": "GRI Index Statement of use Beijing Enterprises Water Group Limited has reported in accordance with the GRI Standards from 1 January 2025 to 31 December 2025. GRI 1 used GRI 1: Foundation 2021 GRI standard Description Page GRI 2: General Disclosures 2021 2-1 Organisational details P01, P05-06 2-2 Ent"
+  },
+  {
+   "profile_field": "water_discharge_m3",
+   "evidence_version_id": "ev_v1_0c670d39_00085",
+   "page_no": 74,
+   "keyword": "Water Discharge",
+   "excerpt": "GRI Index Statement of use Beijing Enterprises Water Group Limited has reported in accordance with the GRI Standards from 1 January 2025 to 31 December 2025. GRI 1 used GRI 1: Foundation 2021 GRI standard Description Page GRI 2: General Disclosures 2021 2-1 Organisational details P01, P05-06 2-2 Ent"
+  }
+ ],
+ "by_profile": {
+  "water_v1": {
+   "records": 306,
+   "assigned": 21,
+   "ambiguous": 0,
+   "unmapped": 285
+  }
+ },
+ "by_profile_field": {
+  "water_consumption_m3": {
+   "records": 18,
+   "latest_record_id": "rec_cr_00371_2026042702104_20261029T165117_0306",
+   "status": "ASSIGNED"
+  },
+  "water_recycled_reused_m3": {
+   "records": 2,
+   "latest_record_id": "rec_cr_00371_2026042702104_20261029T165117_0006",
+   "status": "ASSIGNED"
+  }
+ },
+ "missing_profile_fields": [
+  "water_withdrawal_m3",
+  "water_recycling_rate_pct",
+  "water_discharge_m3",
+  "cod_discharge_t",
+  "ammonia_n_discharge_t",
+  "total_n_discharge_t",
+  "total_p_discharge_t"
+ ],
+ "evidence": {
+  "input": 86,
+  "accepted": 58,
+  "review": 12,
+  "excluded": 16,
+  "other": 0,
+  "candidates": 70,
+  "processed": 70,
+  "processed_other": 0,
+  "coverage": 1.0,
+  "candidate_ids_matched": 70
+ },
+ "classification": {
+  "input": 70,
+  "recorded": 37,
+  "no_record": 33,
+  "failed": 0,
+  "processed": 70,
+  "coverage": 1.0
+ },
+ "unclassified": {
+  "unmapped": 285,
+  "ambiguous": 0,
+  "insufficient_context": 0
+ }
+}

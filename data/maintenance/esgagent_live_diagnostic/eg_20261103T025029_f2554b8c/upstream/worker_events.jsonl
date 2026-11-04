@@ -1,0 +1,2 @@
+{"stage": "EXTRACT", "details": {"message": "新版EsgAgent正在匹配PDF哈希与提取缓存。"}}
+{"stage": "EXTRACT", "details": {"message": "新版模型直接读取PDF，提取并归类；本地不做文本提取或OCR。"}}

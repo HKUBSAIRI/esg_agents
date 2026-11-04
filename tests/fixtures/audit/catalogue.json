@@ -1,0 +1,8 @@
+{
+  "E2.1.1": {
+    "definition": "集团总取水量；按证据披露定义区分耗水量。",
+    "variables": [
+      "Total Water Withdrawal (from all sources in m³)"
+    ]
+  }
+}

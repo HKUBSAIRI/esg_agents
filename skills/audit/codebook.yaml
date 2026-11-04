@@ -1,0 +1,21 @@
+{
+  "A-IND-MISMATCH": {"domain":"CLASSIFICATION","default":"BLOCK","description":"指标与原文定义冲突","counterexample":"只看到用水标签不足以认定取水/耗水错配"},
+  "A-VAR-MISMATCH": {"domain":"CLASSIFICATION","default":"BLOCK","description":"强度、绝对量、年度或行业均值变量错配","counterexample":"不得凭数量级猜变量"},
+  "A-SCOPE-MIX": {"domain":"CLASSIFICATION","default":"BLOCK","description":"集团/区域、分项/总量口径混用","counterexample":"缺少集团证据不等于已证明厂区值错误"},
+  "A-UNIT-MISMATCH": {"domain":"EXTRACTION","default":"BLOCK","description":"D4明确不一致","counterexample":"m3和m³等价，不报不一致"},
+  "A-YEAR-MISMATCH": {"domain":"EXTRACTION","default":"BLOCK","description":"D5明确年度不一致","counterexample":"财年终止年不能直接等同自然年"},
+  "A-BOUNDARY-MISSING": {"domain":"CLASSIFICATION","default":"WARN","description":"同指标同年多记录缺范围","counterexample":"不能自动填Group"},
+  "A-VALUE-IMPLAUSIBLE": {"domain":"CLASSIFICATION","default":"WARN","description":"数值量级或符号可疑","counterexample":"回用量大于取水量不能直接判错"},
+  "A-CROSS-RECORD": {"domain":"CLASSIFICATION","default":"WARN","description":"同口径可比记录矛盾，BLOCK须D10","counterexample":"不同范围不得直接比较"},
+  "A-DUPLICATE-UNMERGED": {"domain":"CLASSIFICATION","default":"WARN","description":"D7支持的未合并重复","counterexample":"同表不同年度不是重复"},
+  "A-NORMALIZATION-INVALID": {"domain":"NORMALIZATION","default":"BLOCK","description":"D3核验归一不一致","counterexample":"不能由审查Agent写回换算值"},
+  "A-FILTER-OVERDROP": {"domain":"FILTER","default":"WARN","description":"给定过滤样本疑似误删","counterexample":"无样本不声称看过被删证据"},
+  "A-MISSING-KEY": {"domain":"COVERAGE","default":"BLOCK","description":"coverage有有效线索但无记录","counterexample":"无coverage不能报告漏提"},
+  "A-EVIDENCE-WEAK": {"domain":"EXTRACTION","default":"BLOCK","description":"D2/D6支持的数值或溯源不足","counterexample":"v1没有bbox不是数值证据不足"},
+  "A-CLOSED-SET-GAP": {"domain":"CLASSIFICATION","default":"INFO","description":"UNMAPPED/OUT_OF_CLOSED_SET","counterexample":"不能建议闭集外变量并当作正式记录"},
+  "A-CONTEXT-INSUFFICIENT": {"domain":"CLASSIFICATION","default":"WARN","description":"证据不足，结论须INSUFFICIENT","counterexample":"不得把无法判断当REJECTED"},
+  "A-EXTRACT-VALUE": {"domain":"EXTRACTION","default":"BLOCK","description":"值与页面/视觉核对不一致","counterexample":"VLM失败不能当作数值不同"},
+  "A-EXTRACT-CONTEXT": {"domain":"EXTRACTION","default":"WARN","description":"行列/表/段落/图注错位","counterexample":"v1没有table_id不构成错位"},
+  "A-EXTRACT-PAGE": {"domain":"EXTRACTION","default":"WARN","description":"页码、bbox或通道不一致","counterexample":"无坐标不能伪造坐标差异"},
+  "A-TRACE-MISSING": {"domain":"EXTRACTION","default":"WARN","description":"v2区域回溯缺失","counterexample":"禁止针对v1天然缺失坐标报此码"}
+}

@@ -1,0 +1,42 @@
+__pycache__/
+*.py[cod]
+.venv/
+
+# 密钥与本机配置，禁止入库
+.env
+**/.env
+*.key
+*.pem
+.git-backup/
+
+# 操作系统与编辑器临时文件
+.DS_Store
+Thumbs.db
+document/
+ESG报告_按行业分类/
+~$*
+data/review_workbench/
+review_workbench.local.json
+review_workbench.b.local.json
+阿里api key
+data/a_b_runs/
+data/general_esg_extract/
+.venv-b-audit/
+.pytest_cache/
+.coverage*
+data/b_audit_demo/
+**/audit_runs/
+**/audit_logs/
+**/logs/audit/
+
+data/esg_pipeline/
+
+data/pipeline_local_smoke/
+
+data/ten_pdf_visual_20261102/
+
+# 运行期缓存、数据库与本地批次记录
+data/esgagent_pipeline/
+data/esgagent_runtime/
+data/water_collection/
+data/model_collection_batches/

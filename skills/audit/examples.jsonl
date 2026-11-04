@@ -1,0 +1,3 @@
+{"scenario":"equivalent_unit","input":{"raw_unit":"m³","unit_hint":"m3"},"expected":{"findings":[]},"note":"等价单位不误报"}
+{"scenario":"v1_no_bbox","input":{"source_format":"v1_numeric_blocks","bbox":null},"forbidden_codes":["A-TRACE-MISSING"],"note":"仍核对整页内容"}
+{"scenario":"insufficient","expected":{"findings":[{"record_id":"example","issue_domain":"CLASSIFICATION","code":"A-CONTEXT-INSUFFICIENT","severity":"WARN","confidence":0.5,"evidence_version_ids":["ev_example"],"proposed_action":"ESCALATE","reason":"上下文不足，需核对完整披露。"}]},"note":"最终状态由代码推导为INSUFFICIENT"}

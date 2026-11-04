@@ -1,0 +1,32 @@
+{
+ "pid": "00855_2025073000035",
+ "source_format": "v1_numeric_blocks",
+ "document": {
+  "schema_version": "3.0",
+  "pid": "00855_2025073000035",
+  "company_name": "UNKNOWN",
+  "company_name_source": "UNKNOWN",
+  "report_year": 2025,
+  "report_year_source": "FILING_YEAR_FALLBACK",
+  "filing_year": 2025,
+  "period_start": null,
+  "period_end": null,
+  "doc_type": "mixed",
+  "page_count": 42,
+  "language": "en",
+  "excluded_pages": [],
+  "pdf_path": null,
+  "source_files": [
+   "intermediate/V1_result/00855_2025073000035/numeric_blocks.json"
+  ],
+  "source_format": "v1_numeric_blocks"
+ },
+ "evidence": 45,
+ "by_kind": {
+  "text": 29,
+  "table_cell": 16
+ },
+ "zero_claim": 3,
+ "page_level": 45,
+ "evidence_sha": "7cc97b1472130e4561c8be42415fe611675137e30e767332dd3dbf803affb198"
+}

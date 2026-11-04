@@ -1,0 +1,11 @@
+{
+  "pid": "SYNTHETIC-B-001",
+  "company_name": "B合成测试公司",
+  "report_year": 2025,
+  "period_start": "2025-01-01",
+  "period_end": "2025-12-31",
+  "page_count": 20,
+  "pdf_path": null,
+  "source_format": "v1_numeric_blocks",
+  "doc_type": "fixture"
+}

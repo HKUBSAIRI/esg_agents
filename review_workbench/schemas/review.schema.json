@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "action": {
+      "enum": [
+        "KEEP",
+        "REMAP",
+        "CORRECT_VALUE",
+        "EXCLUDE_FROM_SCORING",
+        "DEFER"
+      ]
+    },
+    "reviewer": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "reason": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 2000
+    },
+    "expected_version": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "proposed_value": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "proposed_variable": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "minLength": 1,
+      "maxLength": 512
+    }
+  },
+  "required": [
+    "action",
+    "reviewer",
+    "reason",
+    "expected_version"
+  ],
+  "additionalProperties": false
+}

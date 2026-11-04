@@ -1,0 +1,365 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "s4-1.0"
+    },
+    "report_context": {
+      "type": "object",
+      "properties": {
+        "pid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "company_name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 512
+        },
+        "report_year": {
+          "type": "integer",
+          "minimum": 2000,
+          "maximum": 2200
+        },
+        "period_start": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "period_end": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1,
+          "maxLength": 40
+        },
+        "extensions": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "pid",
+        "company_name",
+        "report_year"
+      ],
+      "additionalProperties": false
+    },
+    "catalogue": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "indicators": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "indicator_id": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "definition": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4000
+              },
+              "variables": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 512
+                },
+                "minItems": 1,
+                "maxItems": 200
+              },
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1,
+                  "maxLength": 80
+                },
+                "minItems": 0,
+                "maxItems": 100
+              }
+            },
+            "required": [
+              "indicator_id",
+              "definition",
+              "variables"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 1,
+          "maxItems": 100
+        }
+      },
+      "required": [
+        "version",
+        "indicators"
+      ],
+      "additionalProperties": false
+    },
+    "review_policy": {
+      "type": "object",
+      "properties": {
+        "policy_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "water_rules_version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 80
+        },
+        "check_missing_key": {
+          "type": "boolean"
+        },
+        "block_confidence": {
+          "type": "number",
+          "minimum": 0.7,
+          "maximum": 1
+        },
+        "max_model_calls": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "max_output_tokens": {
+          "type": "integer",
+          "minimum": 1000,
+          "maximum": 16000
+        }
+      },
+      "required": [
+        "policy_version",
+        "water_rules_version",
+        "check_missing_key",
+        "block_confidence",
+        "max_model_calls",
+        "max_output_tokens"
+      ],
+      "additionalProperties": false
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "evidence_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "page_no": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "kind": {
+            "enum": [
+              "text",
+              "table_cell",
+              "figure",
+              "page_ocr"
+            ]
+          },
+          "content": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100000
+          },
+          "bbox": {
+            "type": [
+              "array",
+              "null"
+            ],
+            "items": {
+              "type": "number"
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "unit_hint": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "col_header": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 512
+          },
+          "row_header": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 512
+          },
+          "tier": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "source_ref": {
+            "type": "object"
+          },
+          "extensions": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "evidence_id",
+          "page_no",
+          "kind",
+          "content"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 2000
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "record_uid": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "indicator_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "variable": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 512
+          },
+          "value": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 160
+          },
+          "year": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1900,
+            "maximum": 2200
+          },
+          "breakdown": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 512
+          },
+          "source_page": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 1
+          },
+          "evidence_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 240
+          },
+          "provenance_source": {
+            "enum": [
+              "evidence_id",
+              "page_value",
+              "unresolved"
+            ]
+          },
+          "classification_status": {
+            "enum": [
+              "ASSIGNED",
+              "AMBIGUOUS",
+              "UNMAPPED",
+              "OUT_OF_CLOSED_SET",
+              "INSUFFICIENT_CONTEXT"
+            ]
+          },
+          "classification_reason": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "minLength": 1,
+            "maxLength": 3000
+          },
+          "extensions": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "record_uid",
+          "indicator_id",
+          "variable",
+          "value",
+          "unit",
+          "year",
+          "breakdown",
+          "source_page",
+          "evidence_id",
+          "provenance_source",
+          "classification_status"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 500
+    }
+  },
+  "required": [
+    "schema_version",
+    "report_context",
+    "catalogue",
+    "review_policy",
+    "evidence",
+    "records"
+  ],
+  "additionalProperties": false
+}

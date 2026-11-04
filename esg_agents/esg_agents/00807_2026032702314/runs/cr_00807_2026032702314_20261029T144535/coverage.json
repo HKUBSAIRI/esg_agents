@@ -1,0 +1,246 @@
+{
+ "schema_version": "3.0",
+ "pid": "00807_2026032702314",
+ "classification_run_id": "cr_00807_2026032702314_20261029T144535",
+ "profile_version": "WATER-1.0.0",
+ "key_fields": [
+  "water_withdrawal_m3",
+  "water_consumption_m3",
+  "water_discharge_m3"
+ ],
+ "by_field": {
+  "revenue_million": {
+   "n_records": 0,
+   "n_keyword_hits": 8,
+   "n_unclassified_hits": 8
+  },
+  "water_recycled_reused_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 6,
+   "n_unclassified_hits": 6
+  },
+  "water_discharge_m3": {
+   "n_records": 9,
+   "n_keyword_hits": 4,
+   "n_unclassified_hits": 0
+  },
+  "total_n_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 1,
+   "n_unclassified_hits": 1
+  },
+  "total_p_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 1,
+   "n_unclassified_hits": 1
+  },
+  "water_consumption_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 7,
+   "n_unclassified_hits": 7
+  },
+  "water_recycling_rate_pct": {
+   "n_records": 0,
+   "n_keyword_hits": 1,
+   "n_unclassified_hits": 1
+  },
+  "revenue_currency": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "water_withdrawal_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "cod_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "ammonia_n_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  }
+ },
+ "unclassified_hints": [
+  {
+   "profile_field": "revenue_million",
+   "evidence_version_id": "ev_v1_94ff3af3_00011",
+   "page_no": 12,
+   "keyword": "Revenue",
+   "excerpt": "At the Branch Level Based on the Company's overall risk list and actual business conditions, the Compliance and Risk Control Department annually guides each branch in risk identification, assessment, and management. For identified major risks, corresponding prevention and control measures are formul"
+  },
+  {
+   "profile_field": "revenue_million",
+   "evidence_version_id": "ev_v1_94ff3af3_00017",
+   "page_no": 18,
+   "keyword": "Revenue",
+   "excerpt": "During this reporting period, the company's direct greenhouse gas emissions (Scope 1) mainly came from on-site direct energy use and solid waste incineration; indirect greenhouse gas emissions (Scope 2) mainly came from purchased electricity. Regarding other indirect emissions (Scope 3), the company"
+  },
+  {
+   "profile_field": "water_recycled_reused_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00024",
+   "page_no": 25,
+   "keyword": "Recycled Water",
+   "excerpt": "Pioneering a Green and Low-Carbon Future SLIC Environment closely follows the national strategy of \"promoting green development and promoting harmonious coexistence between humans and nature,\" focusing on its main environmental protection business, strictly controlling its operational environmental "
+  },
+  {
+   "profile_field": "water_recycled_reused_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00025",
+   "page_no": 26,
+   "keyword": "Reused Water",
+   "excerpt": "Emission Management SIIC Environment complies with the \"Environmental Protection Law of the People's Republic of China\", the \"Air Pollution Control Ordinance\", and the \"Regulations on the Management of Pollutant Discharge Permits\", strictly implementing national discharge standards for wastewater, a"
+  },
+  {
+   "profile_field": "total_n_discharge_t",
+   "evidence_version_id": "ev_v1_94ff3af3_00025",
+   "page_no": 26,
+   "keyword": "Total Nitrogen",
+   "excerpt": "Emission Management SIIC Environment complies with the \"Environmental Protection Law of the People's Republic of China\", the \"Air Pollution Control Ordinance\", and the \"Regulations on the Management of Pollutant Discharge Permits\", strictly implementing national discharge standards for wastewater, a"
+  },
+  {
+   "profile_field": "total_p_discharge_t",
+   "evidence_version_id": "ev_v1_94ff3af3_00025",
+   "page_no": 26,
+   "keyword": "Total Phosphorus",
+   "excerpt": "Emission Management SIIC Environment complies with the \"Environmental Protection Law of the People's Republic of China\", the \"Air Pollution Control Ordinance\", and the \"Regulations on the Management of Pollutant Discharge Permits\", strictly implementing national discharge standards for wastewater, a"
+  },
+  {
+   "profile_field": "revenue_million",
+   "evidence_version_id": "ev_v1_94ff3af3_00027",
+   "page_no": 28,
+   "keyword": "Revenue",
+   "excerpt": "Energy and Resource Management In the field of energy saving and consumption reduction, SIIC Environment focuses on core businesses such as water supply, wastewater treatment, sludge treatment and solid waste disposal, and comprehensively promotes an energy efficiency lean management model. It imple"
+  },
+  {
+   "profile_field": "water_consumption_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00027",
+   "page_no": 28,
+   "keyword": "Water Consumption",
+   "excerpt": "Energy and Resource Management In the field of energy saving and consumption reduction, SIIC Environment focuses on core businesses such as water supply, wastewater treatment, sludge treatment and solid waste disposal, and comprehensively promotes an energy efficiency lean management model. It imple"
+  },
+  {
+   "profile_field": "water_consumption_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00028",
+   "page_no": 29,
+   "keyword": "Water Consumption",
+   "excerpt": "Scenario Low Risk Medium Risk High Risk Very High Risk Extreme Risk Baseline 19.11% 57.32% 23.57% 2030 Optimistic 9.55% 54.78% 28.66% 7.01% 2030 Pessimistic 5.10% 45.86% 33.12% 15.29% 0.64% 2050 Optimistic 3.18% 61.78% 25.48% 9.55% 2050 Pessimistic 1.91% 37.58% 39.49% 20.38% 0.64% The water risk ass"
+  },
+  {
+   "profile_field": "water_recycling_rate_pct",
+   "evidence_version_id": "ev_v1_94ff3af3_00028",
+   "page_no": 29,
+   "keyword": "Recycling Rate",
+   "excerpt": "Scenario Low Risk Medium Risk High Risk Very High Risk Extreme Risk Baseline 19.11% 57.32% 23.57% 2030 Optimistic 9.55% 54.78% 28.66% 7.01% 2030 Pessimistic 5.10% 45.86% 33.12% 15.29% 0.64% 2050 Optimistic 3.18% 61.78% 25.48% 9.55% 2050 Pessimistic 1.91% 37.58% 39.49% 20.38% 0.64% The water risk ass"
+  },
+  {
+   "profile_field": "water_recycled_reused_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00028",
+   "page_no": 29,
+   "keyword": "Recycled Water",
+   "excerpt": "Scenario Low Risk Medium Risk High Risk Very High Risk Extreme Risk Baseline 19.11% 57.32% 23.57% 2030 Optimistic 9.55% 54.78% 28.66% 7.01% 2030 Pessimistic 5.10% 45.86% 33.12% 15.29% 0.64% 2050 Optimistic 3.18% 61.78% 25.48% 9.55% 2050 Pessimistic 1.91% 37.58% 39.49% 20.38% 0.64% The water risk ass"
+  },
+  {
+   "profile_field": "revenue_million",
+   "evidence_version_id": "ev_v1_94ff3af3_00029",
+   "page_no": 30,
+   "keyword": "Revenue",
+   "excerpt": "Biodiversity Conservation The national \"14th Five-Year Plan\" focuses on promoting green development, emphasizing ecological and environmental protection, and synergistically promoting high-quality economic development and high-level ecological and environmental protection. SIIC Environment is commit"
+  },
+  {
+   "profile_field": "water_consumption_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00029",
+   "page_no": 30,
+   "keyword": "Total Water Consumption",
+   "excerpt": "Biodiversity Conservation The national \"14th Five-Year Plan\" focuses on promoting green development, emphasizing ecological and environmental protection, and synergistically promoting high-quality economic development and high-level ecological and environmental protection. SIIC Environment is commit"
+  },
+  {
+   "profile_field": "water_consumption_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00030",
+   "page_no": 31,
+   "keyword": "Water Consumption",
+   "excerpt": "Wastewater Treatment Business Line Emissions Emission Type Indicators Unit 2025 2024 2023 Air Pollutants Ammonia gas / In compliance In compliance In compliance Hydrogen Sulfide / In compliance In compliance In compliance Greenhouse Gases 1 Direct Emissions (Scope 1) Tonnes CO 2 e 941.83 1,039.20 95"
+  },
+  {
+   "profile_field": "water_recycled_reused_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00030",
+   "page_no": 31,
+   "keyword": "Recycled Water",
+   "excerpt": "Wastewater Treatment Business Line Emissions Emission Type Indicators Unit 2025 2024 2023 Air Pollutants Ammonia gas / In compliance In compliance In compliance Hydrogen Sulfide / In compliance In compliance In compliance Greenhouse Gases 1 Direct Emissions (Scope 1) Tonnes CO 2 e 941.83 1,039.20 95"
+  },
+  {
+   "profile_field": "water_consumption_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00031",
+   "page_no": 32,
+   "keyword": "Water Consumption",
+   "excerpt": "Water Supply Business Line Emissions Emission Type 1 Indicator Unit 2025 2024 2023 Greenhouse Gases 2 Direct Emissions (Scope 1) Tonnes CO 2 e 13.82 14.98 19.42 Indirect Emissions (Scope 2) Tonnes CO 2 e 78,224.96 78,502.49 81,027.69 Wastewater Wastewater Tonnes 4,690,321.00 7,681,379.00 8,973,313.0"
+  },
+  {
+   "profile_field": "water_recycled_reused_m3",
+   "evidence_version_id": "ev_v1_94ff3af3_00031",
+   "page_no": 32,
+   "keyword": "Recycled Water",
+   "excerpt": "Water Supply Business Line Emissions Emission Type 1 Indicator Unit 2025 2024 2023 Greenhouse Gases 2 Direct Emissions (Scope 1) Tonnes CO 2 e 13.82 14.98 19.42 Indirect Emissions (Scope 2) Tonnes CO 2 e 78,224.96 78,502.49 81,027.69 Wastewater Wastewater Tonnes 4,690,321.00 7,681,379.00 8,973,313.0"
+  },
+  {
+   "profile_field": "revenue_million",
+   "evidence_version_id": "ev_v1_94ff3af3_00035",
+   "page_no": 36,
+   "keyword": "Turnover",
+   "excerpt": "As of December 31, 2025 the Group had a total of 6,512 employees all 6,512 are full-time employees with 0 part-time employees Categorized by gender, age group, and geographical region as follows: Gender Count Male Employees 4,843 Female Employees 1,669 Age Group Count Below 30 1,027 Below 30 Years O"
+  }
+ ],
+ "by_profile": {
+  "water_v1": {
+   "records": 17,
+   "assigned": 6,
+   "ambiguous": 0,
+   "unmapped": 8
+  }
+ },
+ "by_profile_field": {
+  "water_discharge_m3": {
+   "records": 9,
+   "latest_record_id": "rec_cr_00807_2026032702314_20261029T144535_0017",
+   "status": "ASSIGNED"
+  }
+ },
+ "missing_profile_fields": [
+  "water_withdrawal_m3",
+  "water_consumption_m3",
+  "water_recycling_rate_pct",
+  "water_recycled_reused_m3",
+  "cod_discharge_t",
+  "ammonia_n_discharge_t",
+  "total_n_discharge_t",
+  "total_p_discharge_t"
+ ],
+ "evidence": {
+  "input": 49,
+  "accepted": 31,
+  "review": 13,
+  "excluded": 5,
+  "other": 0,
+  "candidates": 44,
+  "processed": 44,
+  "processed_other": 0,
+  "coverage": 1.0,
+  "candidate_ids_matched": 44
+ },
+ "classification": {
+  "input": 44,
+  "recorded": 11,
+  "no_record": 33,
+  "failed": 0,
+  "processed": 44,
+  "coverage": 1.0
+ },
+ "unclassified": {
+  "unmapped": 8,
+  "ambiguous": 0,
+  "insufficient_context": 3
+ }
+}

@@ -1,0 +1,139 @@
+{
+ "schema_version": "3.0",
+ "pid": "00855_2025073000035",
+ "classification_run_id": "cr_00855_2025073000035_20261029T180751",
+ "profile_version": "WATER-1.0.0",
+ "key_fields": [
+  "water_withdrawal_m3",
+  "water_consumption_m3",
+  "water_discharge_m3"
+ ],
+ "by_field": {
+  "ammonia_n_discharge_t": {
+   "n_records": 3,
+   "n_keyword_hits": 1,
+   "n_unclassified_hits": 0
+  },
+  "revenue_million": {
+   "n_records": 6,
+   "n_keyword_hits": 5,
+   "n_unclassified_hits": 0
+  },
+  "water_withdrawal_m3": {
+   "n_records": 1,
+   "n_keyword_hits": 3,
+   "n_unclassified_hits": 0
+  },
+  "water_recycling_rate_pct": {
+   "n_records": 0,
+   "n_keyword_hits": 1,
+   "n_unclassified_hits": 1
+  },
+  "water_consumption_m3": {
+   "n_records": 1,
+   "n_keyword_hits": 2,
+   "n_unclassified_hits": 0
+  },
+  "revenue_currency": {
+   "n_records": 2,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "water_recycled_reused_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "water_discharge_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "cod_discharge_t": {
+   "n_records": 3,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "total_n_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "total_p_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  }
+ },
+ "unclassified_hints": [
+  {
+   "profile_field": "water_recycling_rate_pct",
+   "evidence_version_id": "ev_v1_7736271c_00017",
+   "page_no": 16,
+   "keyword": "Recycling Rate",
+   "excerpt": "SAFEGUARDING PUBLIC'S LIQUID LIFELINE, INNOVATING THE FUTURE OF CITIES Urban water supply is a foundational public utility closely tied to national economy and people's livelihood, directly impacting public health and well-being, urban safety operations, and sustainable economic development. The Gro"
+  }
+ ],
+ "by_profile": {
+  "water_v1": {
+   "records": 45,
+   "assigned": 13,
+   "ambiguous": 0,
+   "unmapped": 29
+  }
+ },
+ "by_profile_field": {
+  "water_withdrawal_m3": {
+   "records": 1,
+   "latest_record_id": "rec_cr_00855_2025073000035_20261029T180751_0043",
+   "status": "INSUFFICIENT_CONTEXT"
+  },
+  "water_consumption_m3": {
+   "records": 1,
+   "latest_record_id": "rec_cr_00855_2025073000035_20261029T180751_0042",
+   "status": "INSUFFICIENT_CONTEXT"
+  },
+  "cod_discharge_t": {
+   "records": 3,
+   "latest_record_id": "rec_cr_00855_2025073000035_20261029T180751_0039",
+   "status": "ASSIGNED"
+  },
+  "ammonia_n_discharge_t": {
+   "records": 3,
+   "latest_record_id": "rec_cr_00855_2025073000035_20261029T180751_0036",
+   "status": "ASSIGNED"
+  }
+ },
+ "missing_profile_fields": [
+  "water_recycling_rate_pct",
+  "water_recycled_reused_m3",
+  "water_discharge_m3",
+  "total_n_discharge_t",
+  "total_p_discharge_t"
+ ],
+ "evidence": {
+  "input": 45,
+  "accepted": 31,
+  "review": 5,
+  "excluded": 9,
+  "other": 0,
+  "candidates": 36,
+  "processed": 36,
+  "processed_other": 0,
+  "coverage": 1.0,
+  "candidate_ids_matched": 36
+ },
+ "classification": {
+  "input": 36,
+  "recorded": 4,
+  "no_record": 32,
+  "failed": 0,
+  "processed": 36,
+  "coverage": 1.0
+ },
+ "unclassified": {
+  "unmapped": 29,
+  "ambiguous": 0,
+  "insufficient_context": 3
+ }
+}

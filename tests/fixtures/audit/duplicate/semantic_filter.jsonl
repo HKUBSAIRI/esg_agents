@@ -1,0 +1,4 @@
+{"decision_source": "FIXTURE", "evidence_id": "e_b_1", "evidence_version_id": "ev_b_1", "noise_class": "NONE", "policy_version": "FP-FIXTURE", "reason_code": "DATA", "reason_text": "合成指标", "status": "ACCEPT", "topic": "WATER"}
+{"decision_source": "FIXTURE", "evidence_id": "e_b_problem", "evidence_version_id": "ev_b_problem", "noise_class": "NONE", "policy_version": "FP-FIXTURE", "reason_code": "DATA", "reason_text": "合成指标", "status": "ACCEPT", "topic": "WATER"}
+{"decision_source": "FIXTURE", "evidence_id": "e_b_unknown", "evidence_version_id": "ev_b_unknown", "noise_class": "NONE", "policy_version": "FP-FIXTURE", "reason_code": "DATA", "reason_text": "合成指标", "status": "ACCEPT", "topic": "WATER"}
+{"decision_source": "FIXTURE", "evidence_id": "e_b_dup", "evidence_version_id": "ev_b_dup", "noise_class": "NONE", "policy_version": "FP-FIXTURE", "reason_code": "DATA", "reason_text": "合成指标", "status": "ACCEPT", "topic": "WATER"}

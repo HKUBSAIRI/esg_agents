@@ -1,0 +1,131 @@
+{
+ "schema_version": "3.0",
+ "pid": "00855_2026073000047",
+ "classification_run_id": "cr_00855_2026073000047_20261029T170027",
+ "profile_version": "WATER-1.0.0",
+ "key_fields": [
+  "water_withdrawal_m3",
+  "water_consumption_m3",
+  "water_discharge_m3"
+ ],
+ "by_field": {
+  "ammonia_n_discharge_t": {
+   "n_records": 3,
+   "n_keyword_hits": 1,
+   "n_unclassified_hits": 0
+  },
+  "revenue_million": {
+   "n_records": 6,
+   "n_keyword_hits": 8,
+   "n_unclassified_hits": 0
+  },
+  "water_withdrawal_m3": {
+   "n_records": 1,
+   "n_keyword_hits": 4,
+   "n_unclassified_hits": 0
+  },
+  "water_consumption_m3": {
+   "n_records": 1,
+   "n_keyword_hits": 5,
+   "n_unclassified_hits": 0
+  },
+  "revenue_currency": {
+   "n_records": 2,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "water_recycling_rate_pct": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "water_recycled_reused_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "water_discharge_m3": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "cod_discharge_t": {
+   "n_records": 3,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "total_n_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  },
+  "total_p_discharge_t": {
+   "n_records": 0,
+   "n_keyword_hits": 0,
+   "n_unclassified_hits": 0
+  }
+ },
+ "unclassified_hints": [],
+ "by_profile": {
+  "water_v1": {
+   "records": 18,
+   "assigned": 12,
+   "ambiguous": 0,
+   "unmapped": 2
+  }
+ },
+ "by_profile_field": {
+  "water_withdrawal_m3": {
+   "records": 1,
+   "latest_record_id": "rec_cr_00855_2026073000047_20261029T170027_0014",
+   "status": "INSUFFICIENT_CONTEXT"
+  },
+  "water_consumption_m3": {
+   "records": 1,
+   "latest_record_id": "rec_cr_00855_2026073000047_20261029T170027_0013",
+   "status": "INSUFFICIENT_CONTEXT"
+  },
+  "cod_discharge_t": {
+   "records": 3,
+   "latest_record_id": "rec_cr_00855_2026073000047_20261029T170027_0012",
+   "status": "ASSIGNED"
+  },
+  "ammonia_n_discharge_t": {
+   "records": 3,
+   "latest_record_id": "rec_cr_00855_2026073000047_20261029T170027_0009",
+   "status": "ASSIGNED"
+  }
+ },
+ "missing_profile_fields": [
+  "water_recycling_rate_pct",
+  "water_recycled_reused_m3",
+  "water_discharge_m3",
+  "total_n_discharge_t",
+  "total_p_discharge_t"
+ ],
+ "evidence": {
+  "input": 60,
+  "accepted": 42,
+  "review": 9,
+  "excluded": 9,
+  "other": 0,
+  "candidates": 51,
+  "processed": 51,
+  "processed_other": 0,
+  "coverage": 1.0,
+  "candidate_ids_matched": 51
+ },
+ "classification": {
+  "input": 51,
+  "recorded": 5,
+  "no_record": 46,
+  "failed": 0,
+  "processed": 51,
+  "coverage": 1.0
+ },
+ "unclassified": {
+  "unmapped": 2,
+  "ambiguous": 0,
+  "insufficient_context": 4
+ }
+}

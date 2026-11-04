@@ -1,0 +1,20 @@
+{
+ "schema_version": "3.0",
+ "pid": "06136_2026033100988",
+ "company_name": "UNKNOWN",
+ "company_name_source": "UNKNOWN",
+ "report_year": 2025,
+ "report_year_source": "COVER_PAGE",
+ "filing_year": 2026,
+ "period_start": "2025-01-01",
+ "period_end": "2025-12-31",
+ "doc_type": "mixed",
+ "page_count": 50,
+ "language": "en",
+ "excluded_pages": [],
+ "pdf_path": null,
+ "source_files": [
+  "intermediate/V1_result/06136_2026033100988/numeric_blocks.json"
+ ],
+ "source_format": "v1_numeric_blocks"
+}

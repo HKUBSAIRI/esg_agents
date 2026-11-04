@@ -1,0 +1,55 @@
+{
+  "companies": [
+    {
+      "company_id": "co_crbeverage",
+      "hkex_code": "02460.HK",
+      "name": "华润饮料",
+      "name_en": "China Resources Beverage",
+      "industry_code": "fb-nb",
+      "sasb_sector": "Food & Beverage",
+      "sasb_industry": "Non-Alcoholic Beverages",
+      "aliases": [
+        "华润饮料",
+        "China Resources Beverage",
+        "华润饮料（控股）有限公司",
+        "怡宝"
+      ],
+      "default_report_year": 2025,
+      "name_en_short": "CR BEVERAGE"
+    },
+    {
+      "company_id": "co_tsingtao",
+      "hkex_code": "00168.HK",
+      "name": "青岛啤酒",
+      "name_en": "Tsingtao Brewery",
+      "industry_code": "fb-ab",
+      "sasb_sector": "Food & Beverage",
+      "sasb_industry": "Alcoholic Beverages",
+      "aliases": [
+        "青岛啤酒",
+        "Tsingtao Brewery",
+        "青岛啤酒股份有限公司"
+      ],
+      "default_report_year": 2025,
+      "name_en_short": "TSINGTAO BREW"
+    },
+    {
+      "company_id": "co_crbeer",
+      "hkex_code": "00291.HK",
+      "name": "华润啤酒",
+      "name_en": "China Resources Beer",
+      "name_en_short": "CHINA RES BEER",
+      "industry_code": "fb-ab",
+      "sasb_sector": "Food & Beverage",
+      "sasb_industry": "Alcoholic Beverages",
+      "aliases": [
+        "华润啤酒",
+        "China Resources Beer",
+        "华润雪花",
+        "雪花啤酒",
+        "CR Beer"
+      ],
+      "default_report_year": 2025
+    }
+  ]
+}

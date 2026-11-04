@@ -1,0 +1,503 @@
+﻿{
+    "date":  "2026-11-04",
+    "workspace":  "C:\\Users\\Administrator\\Desktop\\拉取数据",
+    "preserved":  [
+                      ".venv-b-audit",
+                      "阿里api key",
+                      "水资源.xlsx",
+                      "公司行业对照.xlsx",
+                      "ESG报告_按行业分类",
+                      "esg_agents",
+                      "outputs",
+                      "data/review_workbench",
+                      "data/esgagent_runtime",
+                      "data/esgagent_pipeline",
+                      "EsgAgent/EsgAgent/app",
+                      "EsgAgent/EsgAgent/data",
+                      "EsgAgent/EsgAgent/.git"
+                  ],
+    "entries":  [
+                    {
+                        "path":  "检查审查程序.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  549,
+                        "sha256":  "402B280EB4138141781F80216407453DD2E0773A7F527CB5EC9F8457F85DBA86",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "持续自动分类.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  165,
+                        "sha256":  "9901792F1A9271940FDE487151ECCEA223BC937795A474D09472A9B1EE2A9C60",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "__pycache__",
+                        "reason":  "可再生成的Python或pytest缓存",
+                        "files":  1,
+                        "bytes":  41948,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "用A数据运行B.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  1346,
+                        "sha256":  "4D9AD5F408D129266CC4ACBCF859AC5F3B36E8C2165D14C81A55470B206E787D",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "安装B审查环境.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  943,
+                        "sha256":  "12813B0038953544854E7C97AF3895C5D854C3F309F6F6F198D38447A44B6215",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "运行B审查示例.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  971,
+                        "sha256":  "00B1775F0450E53B52025F2438F240CD75ED74F4E7F367159CDE43ADDFC4B86F",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "检查B审查程序.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  982,
+                        "sha256":  "6F666BEF641809C4E2CD6D7D2B14755B41ED1E02AED403EF02B540F709B2FA40",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "安装通用提取环境.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  719,
+                        "sha256":  "08DD0BE50FFE7B1911C66FEEEAD0C76DBD167315BC1293E5D4E5E4509438D8E1",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "一键ESG全流程.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  1114,
+                        "sha256":  "EA2086B21A968D606E8CF9B08BECD1225244105B68D151079293436ADD35836D",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  ".pytest_cache",
+                        "reason":  "可再生成的Python或pytest缓存",
+                        "files":  5,
+                        "bytes":  51095,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "通用ESG定量提取.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  1079,
+                        "sha256":  "3188E06AD288AAACA2B3B0D362FA2791DF0C38D6B458A743FC8A9BA069A0A28A",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "用A数据运行B_仅规则.bat",
+                        "reason":  "重复或旧版入口，功能由工作台及保留的Python CLI承担",
+                        "files":  1,
+                        "bytes":  1092,
+                        "sha256":  "979980E5C18DED9598034BC6A4719B7ECCBE858271C65B13464EFB7332970DDE",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\__MACOSX",
+                        "reason":  "Mac压缩包资源分叉元数据",
+                        "files":  13601,
+                        "bytes":  2217242,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "tests\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  6,
+                        "bytes":  140132,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "scripts\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  5,
+                        "bytes":  61581,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "tests\\unit\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  7,
+                        "bytes":  286524,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\.venv",
+                        "reason":  "交付中携带的Mac Python虚拟环境，Windows使用根目录.venv-b-audit",
+                        "files":  12044,
+                        "bytes":  340181974,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "tests\\contract\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  3,
+                        "bytes":  34697,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\.DS_Store",
+                        "reason":  "Mac Finder索引文件",
+                        "files":  1,
+                        "bytes":  14340,
+                        "sha256":  "7647C27D472089555158C8278A55B1374FBBF2A7D9A7BFBD7CCA46AED8FD8838",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "src\\esg_semantic\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  3,
+                        "bytes":  65365,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "src\\esg_pipeline\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  16,
+                        "bytes":  236613,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\batch_queue",
+                        "reason":  "可再生成的浏览器测试产物或临时对照截图，不含生产任务数据",
+                        "files":  7,
+                        "bytes":  203937,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "review_workbench\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  14,
+                        "bytes":  293223,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "tests\\integration\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  12,
+                        "bytes":  496273,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\chunk_p6.png",
+                        "reason":  "可再生成的浏览器测试产物或临时对照截图，不含生产任务数据",
+                        "files":  1,
+                        "bytes":  742621,
+                        "sha256":  "7D8EA1200476E548D92B0CA73DBAC99F5B5E381BF932F30B55A838DE39A6660B",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "src\\esg_extraction\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  4,
+                        "bytes":  59560,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\.pytest_cache",
+                        "reason":  "可再生成的Python或pytest缓存",
+                        "files":  4,
+                        "bytes":  532,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\validation.xml",
+                        "reason":  "可再生成的测试报告",
+                        "files":  1,
+                        "bytes":  47718,
+                        "sha256":  "C133F64AE61066DCC918928567D335A092B4263B51E1D03E9AF7159B6E7BFFBF",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "tests\\fixtures\\audit\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  3,
+                        "bytes":  12649,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\original_p6.png",
+                        "reason":  "可再生成的浏览器测试产物或临时对照截图，不含生产任务数据",
+                        "files":  1,
+                        "bytes":  759189,
+                        "sha256":  "B7C302873D2BC9A8C68F4C5A71F9CD902E8ED6EFC7ACB852D91026B39F9311D8",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\app\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  3,
+                        "bytes":  20991,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "src\\esg_semantic\\audit\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  14,
+                        "bytes":  144646,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\unified_workbench",
+                        "reason":  "可再生成的浏览器测试产物或临时对照截图，不含生产任务数据",
+                        "files":  5,
+                        "bytes":  534880,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\tests\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  24,
+                        "bytes":  1018836,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\app\\core\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  12,
+                        "bytes":  42633,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\esgagent_pytest_cache",
+                        "reason":  "可再生成的Python或pytest缓存",
+                        "files":  5,
+                        "bytes":  11865,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\app\\models\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  6,
+                        "bytes":  41102,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\app\\agents\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  4,
+                        "bytes":  77538,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\tests\\fakes\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  4,
+                        "bytes":  18866,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\app\\services\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  14,
+                        "bytes":  200439,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent\\EsgAgent\\app\\adapters\\__pycache__",
+                        "reason":  "可再生成的Python字节码缓存",
+                        "files":  6,
+                        "bytes":  70594,
+                        "sha256":  null,
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\esgagent_integration_tests.xml",
+                        "reason":  "可再生成的测试报告",
+                        "files":  1,
+                        "bytes":  53268,
+                        "sha256":  "38E730B1EEBB422A5F9E4F87BEEB8CDC44714A389187CAB4C1F92363F3EA7997",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\model_collection_validation.xml",
+                        "reason":  "可再生成的测试报告",
+                        "files":  1,
+                        "bytes":  51870,
+                        "sha256":  "D79E7B67797C9E5060153CD86422D953370D5AB0AE819B51C7D331F781297D9F",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "data\\maintenance\\water_collection_validation.xml",
+                        "reason":  "可再生成的测试报告",
+                        "files":  1,
+                        "bytes":  50004,
+                        "sha256":  "8CEC9E8BFFDC2C2715FBE2762665A45D9A410D73E331FEDD0B3C11C685354459",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "esg_agents/esg_agents/.DS_Store",
+                        "reason":  "Mac Finder索引文件，原始交付业务文件不变",
+                        "files":  1,
+                        "bytes":  10244,
+                        "sha256":  "D7A6A86169D37299CAFE59BA5991BBDA2D99FF3E33960FA4A0455AE2826602F6",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "esg_agents/esg_agents/00371_2026042702104/.DS_Store",
+                        "reason":  "Mac Finder索引文件，原始交付业务文件不变",
+                        "files":  1,
+                        "bytes":  6148,
+                        "sha256":  "20C8B9BEE410DCCE303C576D953A3206406B63B09C2E781E9ACC9089F0FC1D74",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "EsgAgent/EsgAgent/docs/.DS_Store",
+                        "reason":  "Mac Finder索引文件，原始交付业务文件不变",
+                        "files":  1,
+                        "bytes":  6148,
+                        "sha256":  "66E20919720192954A0677269A8F039496032920C8508C1059494E5C21B916DE",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "review_workbench.b.local.example.json",
+                        "reason":  "旧版独立接口占位示例，当前主流程不读取；配置方式保留在文档",
+                        "files":  1,
+                        "bytes":  176,
+                        "sha256":  "CB6B593AA073AE9E0A07F3AC64941423CAAD5C1CB4765D4092E26517E43140C4",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "review_workbench.local.example.json",
+                        "reason":  "旧版独立接口占位示例，当前主流程不读取；配置方式保留在文档",
+                        "files":  1,
+                        "bytes":  53,
+                        "sha256":  "4EFB7FDE1FDF99EA69B4C1E5211F43E50A6E6C4B187244BCCD98629A3AEC02C7",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "scripts/extract_esg_quantitative.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  5263,
+                        "sha256":  "0130002DBB4B842A255EE7F8384E35DCF245A65C6BE89B4AAEED1079B07884AF",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "scripts/preview_ten_pdf_visual.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  12395,
+                        "sha256":  "64B9AABA77499FE4834FE121B510F7E7E9CA11D847CD3CC64E03A36ACF5F7DCA",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "scripts/recover_visual_formats.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  4591,
+                        "sha256":  "E1A8C4A1A470AA58AEFF072C01736B1AA77BDCB7D9B7C01FB1FFD895EEEA2744",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "scripts/run_ten_pdf_visual.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  5558,
+                        "sha256":  "FF5E4F0AE09C75A6A7949CCE925E9A2C3074FD22246DC53131118320F5512F5D",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "scripts/run_a_delivery.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  5649,
+                        "sha256":  "5C01404BC7A3C87EF0F6AF5B9DAF4225505DBA6313E29FE68AFC0BDB08A1BEEA",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "scripts/run_model_collection.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  1495,
+                        "sha256":  "2AD7D0E6FE0A3E5F50A763E2E986128FA4FFB62ED02450DBD3B162939201D6D4",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "scripts/run_model_collection_batch.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  4335,
+                        "sha256":  "61AF4634BDE1EC1A1222492DB010FD458433AC9F251660EBA894162CE5EF70C7",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "tests/browser_a_delivery_check.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  4158,
+                        "sha256":  "429C57A5393203D75355419B51E279286A48083FC88C92A91AF72FEADCC1B277",
+                        "status":  "deleted"
+                    },
+                    {
+                        "path":  "tests/unit/test_model_collection_batch.py",
+                        "reason":  "旧版独立运行或固定批次试跑入口，已被新版工作台及队列替代；必要历史格式工具已抽取保留",
+                        "files":  1,
+                        "bytes":  1574,
+                        "sha256":  "7CD215E95FF61119A957D91F2865ED96AD0E5728FE88E1D0A86AC6CE52A88FB9",
+                        "status":  "deleted"
+                    }
+                ],
+    "current_system_cleanup":  [
+                                   {
+                                       "path":  "scripts/run_esg_pipeline.py",
+                                       "reason":  "删除旧CLI主分支，统一调用新版EsgAgent"
+                                   },
+                                   {
+                                       "path":  "scripts/verify_esg_pipeline.py",
+                                       "reason":  "固定十份旧结果检查改为新版原件和快照完整性检查"
+                                   },
+                                   {
+                                       "path":  "src/esg_extraction/history_tools.py",
+                                       "reason":  "只保留历史账本读取和响应格式修复函数，不含旧版运行器"
+                                   },
+                                   {
+                                       "path":  "docs/使用说明.md",
+                                       "reason":  "删除旧版操作章节，保留当前工作台说明"
+                                   }
+                               ]
+}

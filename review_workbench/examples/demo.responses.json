@@ -1,0 +1,114 @@
+{
+  "E2.1.1": {
+    "record_verdicts": [
+      {
+        "record_uid": "demo_r_consumption",
+        "verdict": "SUSPECT",
+        "reason": "原文明确为耗水量，不能直接归为总取水量。"
+      },
+      {
+        "record_uid": "demo_r_unit",
+        "verdict": "SUSPECT",
+        "reason": "原文单位为千立方米，记录单位为 m3，需交由 S5 核对量级。"
+      },
+      {
+        "record_uid": "demo_r_year",
+        "verdict": "SUSPECT",
+        "reason": "证据披露 2024 年，而记录填写 2025 年。"
+      },
+      {
+        "record_uid": "demo_r_scope",
+        "verdict": "SUSPECT",
+        "reason": "证据只覆盖 A 工厂，记录却标为集团口径。"
+      },
+      {
+        "record_uid": "demo_r_value",
+        "verdict": "SUSPECT",
+        "reason": "证据未支持记录中的 999，需核对原始数值。"
+      }
+    ],
+    "findings": [
+      {
+        "record_uid": "demo_r_consumption",
+        "code": "A-IND-MISMATCH",
+        "severity": "BLOCK",
+        "confidence": 0.95,
+        "evidence_ids": [
+          "demo_e_consumption"
+        ],
+        "reason": "原文明确为耗水量，不能直接归为总取水量。",
+        "proposed_action": "ESCALATE"
+      },
+      {
+        "record_uid": "demo_r_unit",
+        "code": "A-UNIT-MISMATCH",
+        "severity": "BLOCK",
+        "confidence": 0.95,
+        "evidence_ids": [
+          "demo_e_unit"
+        ],
+        "reason": "原文单位为千立方米，记录单位为 m3，需交由 S5 核对量级。",
+        "proposed_action": "ESCALATE"
+      },
+      {
+        "record_uid": "demo_r_year",
+        "code": "A-YEAR-MISMATCH",
+        "severity": "BLOCK",
+        "confidence": 0.95,
+        "evidence_ids": [
+          "demo_e_year"
+        ],
+        "reason": "证据披露 2024 年，而记录填写 2025 年。",
+        "proposed_action": "ESCALATE"
+      },
+      {
+        "record_uid": "demo_r_scope",
+        "code": "A-SCOPE-MIX",
+        "severity": "BLOCK",
+        "confidence": 0.95,
+        "evidence_ids": [
+          "demo_e_scope"
+        ],
+        "reason": "证据只覆盖 A 工厂，记录却标为集团口径。",
+        "proposed_action": "ESCALATE"
+      },
+      {
+        "record_uid": "demo_r_value",
+        "code": "A-EVIDENCE-WEAK",
+        "severity": "BLOCK",
+        "confidence": 0.95,
+        "evidence_ids": [
+          "demo_e_value"
+        ],
+        "reason": "证据未支持记录中的 999，需核对原始数值。",
+        "proposed_action": "ESCALATE"
+      }
+    ]
+  },
+  "E2.1.3": {
+    "record_verdicts": [
+      {
+        "record_uid": "demo_r_zero",
+        "verdict": "CONFIRMED",
+        "reason": "证据明确披露集团全年实际总氮排放为 0 t，年度、单位和范围一致。"
+      }
+    ],
+    "findings": []
+  },
+  "E2.1.4": {
+    "record_verdicts": [],
+    "findings": [
+      {
+        "record_uid": null,
+        "code": "A-MISSING-KEY",
+        "severity": "BLOCK",
+        "confidence": 0.95,
+        "evidence_ids": [
+          "demo_e_reuse"
+        ],
+        "reason": "证据披露回用量，但本指标没有对应归类记录，需回到 S3 核对遗漏。",
+        "proposed_action": "MARK_MISSING"
+      }
+    ]
+  }
+}

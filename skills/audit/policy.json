@@ -1,0 +1,13 @@
+{
+  "review_policy_version": "RP-3.0.0-draft-b1",
+  "prompt_sha256": null,
+  "key_indicators": ["E2.1.1"],
+  "sample_rate": 0.2,
+  "block_min_confidence": 0.7,
+  "max_records_per_group": 20,
+  "max_model_calls": null,
+  "temperature": 0,
+  "filter_sample_max": 30,
+  "visual_sample_rate": 0.1,
+  "allow_auto_adopt": false
+}

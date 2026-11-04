@@ -1,0 +1,38 @@
+{
+  "batch_id": "mb_c6294b685dc6469dbf08f8c6e0a15563",
+  "reports_processed": 10,
+  "new_runs": 9,
+  "reused_runs": 1,
+  "new_usage": {
+    "api_attempts": 11,
+    "known_input_tokens": 168308,
+    "known_output_tokens": 10708,
+    "known_total_tokens": 179016,
+    "unknown_usage_requests": 0
+  },
+  "company_rows": 10,
+  "nonempty_business_cells": [
+    [
+      "00807",
+      "revenue_million",
+      "7073"
+    ],
+    [
+      "00807",
+      "revenue_currency",
+      "CNY"
+    ],
+    [
+      "00807",
+      "water_recycled_reused_m3",
+      "79651697.9"
+    ]
+  ],
+  "candidate_rows": 30,
+  "template_sha256": "a109a2b71dd88cad29d80cf1c3f5224e2279025cec105e12fa2ec20c8b8d155a",
+  "output_sha256": "61aed5711c1c17bfcb7d2f1bf345f4c80d81e7070fd7237c57af59e7e243b3ae",
+  "scoring_enabled": false,
+  "all_results_hash_verified": true,
+  "xlsx_rules_preserved": true,
+  "visual_verification_passed": true
+}

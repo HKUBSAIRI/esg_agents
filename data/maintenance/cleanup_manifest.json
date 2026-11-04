@@ -1,0 +1,470 @@
+{
+    "created_at":  "2026-11-02T04:36:51.052306+00:00",
+    "workspace":  "C:\\Users\\Administrator\\Desktop\\拉取数据",
+    "status":  "COMPLETED",
+    "delete":  [
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\.coverage",
+                       "relative":  ".coverage",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  122880
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\.pytest_cache",
+                       "relative":  ".pytest_cache",
+                       "directory":  true,
+                       "files":  5,
+                       "bytes":  34630
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\A交付包_esg_agents_分析与对接建议.md",
+                       "relative":  "A交付包_esg_agents_分析与对接建议.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  12080
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\A开发与全流程联通_交付报告.md",
+                       "relative":  "A开发与全流程联通_交付报告.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  6226
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\A数据跑通B_运行说明与结果.md",
+                       "relative":  "A数据跑通B_运行说明与结果.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  8090
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\B_审查Agent_使用说明.md",
+                       "relative":  "B_审查Agent_使用说明.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  9946
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\B_审查Agent_界面接入说明.md",
+                       "relative":  "B_审查Agent_界面接入说明.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  8440
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\B_界面接入交付与验证.md",
+                       "relative":  "B_界面接入交付与验证.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  4163
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\B_阶段交付与交接说明.md",
+                       "relative":  "B_阶段交付与交接说明.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  7553
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\ESG水资源项目进度汇报_2026-10-30.md",
+                       "relative":  "ESG水资源项目进度汇报_2026-10-30.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  9864
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\ESG水资源项目阶段进度汇报_2026-10-28.md",
+                       "relative":  "ESG水资源项目阶段进度汇报_2026-10-28.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  10440
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\__pycache__",
+                       "relative":  "__pycache__",
+                       "directory":  true,
+                       "files":  1,
+                       "bytes":  41948
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\开发者B_实施规划与设计_待确认.md",
+                       "relative":  "开发者B_实施规划与设计_待确认.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  20408
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\开发者B及A数据接入阶段工作汇报_2026-10-30.md",
+                       "relative":  "开发者B及A数据接入阶段工作汇报_2026-10-30.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  24347
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\通用ESG定量提取_设计与使用说明.md",
+                       "relative":  "通用ESG定量提取_设计与使用说明.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  12143
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\a_b_runs",
+                       "relative":  "data\\a_b_runs",
+                       "directory":  true,
+                       "files":  299,
+                       "bytes":  15365037
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\a_delivery_analysis",
+                       "relative":  "data\\a_delivery_analysis",
+                       "directory":  true,
+                       "files":  1,
+                       "bytes":  9483
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\a_delivery_validation",
+                       "relative":  "data\\a_delivery_validation",
+                       "directory":  true,
+                       "files":  2,
+                       "bytes":  148905
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\b_audit_demo",
+                       "relative":  "data\\b_audit_demo",
+                       "directory":  true,
+                       "files":  176,
+                       "bytes":  263864
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\b_audit_validation",
+                       "relative":  "data\\b_audit_validation",
+                       "directory":  true,
+                       "files":  3,
+                       "bytes":  127266
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\b_workbench_validation",
+                       "relative":  "data\\b_workbench_validation",
+                       "directory":  true,
+                       "files":  2,
+                       "bytes":  123371
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\general_esg_extract",
+                       "relative":  "data\\general_esg_extract",
+                       "directory":  true,
+                       "files":  41,
+                       "bytes":  10982043
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\general_extract_validation",
+                       "relative":  "data\\general_extract_validation",
+                       "directory":  true,
+                       "files":  135,
+                       "bytes":  45567903
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\pipeline_local_smoke",
+                       "relative":  "data\\pipeline_local_smoke",
+                       "directory":  true,
+                       "files":  44,
+                       "bytes":  14214925
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\pipeline_regression_tests.xml",
+                       "relative":  "data\\pipeline_regression_tests.xml",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  45710
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\docs\\A与全流程_实施设计.md",
+                       "relative":  "docs\\A与全流程_实施设计.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  3023
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\docs\\B_契约对齐与待办.md",
+                       "relative":  "docs\\B_契约对齐与待办.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  4997
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\esg_agents\\__MACOSX",
+                       "relative":  "esg_agents\\__MACOSX",
+                       "directory":  true,
+                       "files":  561,
+                       "bytes":  91357
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\review_workbench\\DESIGN.md",
+                       "relative":  "review_workbench\\DESIGN.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  6884
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\review_workbench\\VALIDATION.md",
+                       "relative":  "review_workbench\\VALIDATION.md",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  5611
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\review_workbench\\__pycache__",
+                       "relative":  "review_workbench\\__pycache__",
+                       "directory":  true,
+                       "files":  11,
+                       "bytes":  176183
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\review_workbench\\validation",
+                       "relative":  "review_workbench\\validation",
+                       "directory":  true,
+                       "files":  6,
+                       "bytes":  519509
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\scripts\\__pycache__",
+                       "relative":  "scripts\\__pycache__",
+                       "directory":  true,
+                       "files":  8,
+                       "bytes":  82938
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\scripts\\check_visual_preview.py",
+                       "relative":  "scripts\\check_visual_preview.py",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  2330
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\scripts\\verify_ten_pdf_visual.py",
+                       "relative":  "scripts\\verify_ten_pdf_visual.py",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  3507
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\tests\\__pycache__",
+                       "relative":  "tests\\__pycache__",
+                       "directory":  true,
+                       "files":  8,
+                       "bytes":  155382
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\browser_validation",
+                       "relative":  "data\\esg_pipeline\\browser_validation",
+                       "directory":  true,
+                       "files":  4,
+                       "bytes":  415857
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034637_3106aa",
+                       "relative":  "data\\esg_pipeline\\pl_20261102T034637_3106aa",
+                       "directory":  true,
+                       "files":  42,
+                       "bytes":  1415209
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034639_01ee97",
+                       "relative":  "data\\esg_pipeline\\pl_20261102T034639_01ee97",
+                       "directory":  true,
+                       "files":  42,
+                       "bytes":  3268605
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034640_ffc191",
+                       "relative":  "data\\esg_pipeline\\pl_20261102T034640_ffc191",
+                       "directory":  true,
+                       "files":  42,
+                       "bytes":  1863607
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034642_d609b0",
+                       "relative":  "data\\esg_pipeline\\pl_20261102T034642_d609b0",
+                       "directory":  true,
+                       "files":  42,
+                       "bytes":  3374367
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034658_c20deb",
+                       "relative":  "data\\esg_pipeline\\pl_20261102T034658_c20deb",
+                       "directory":  true,
+                       "files":  55,
+                       "bytes":  14689455
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T043035_5e67c2",
+                       "relative":  "data\\esg_pipeline\\pl_20261102T043035_5e67c2",
+                       "directory":  true,
+                       "files":  31,
+                       "bytes":  2633864
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\ten_pdf_visual_20261102\\browser_check.json",
+                       "relative":  "data\\ten_pdf_visual_20261102\\browser_check.json",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  171
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\ten_pdf_visual_20261102\\preview_browser_check.png",
+                       "relative":  "data\\ten_pdf_visual_20261102\\preview_browser_check.png",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  97363
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\ten_pdf_visual_20261102\\regression_tests.xml",
+                       "relative":  "data\\ten_pdf_visual_20261102\\regression_tests.xml",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  41611
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\ten_pdf_visual_20261102\\state",
+                       "relative":  "data\\ten_pdf_visual_20261102\\state",
+                       "directory":  true,
+                       "files":  10,
+                       "bytes":  15262
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\ten_pdf_visual_20261102\\usage_tests.xml",
+                       "relative":  "data\\ten_pdf_visual_20261102\\usage_tests.xml",
+                       "directory":  false,
+                       "files":  1,
+                       "bytes":  3743
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\src\\esg_extraction\\__pycache__",
+                       "relative":  "src\\esg_extraction\\__pycache__",
+                       "directory":  true,
+                       "files":  4,
+                       "bytes":  59513
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\src\\esg_pipeline\\__pycache__",
+                       "relative":  "src\\esg_pipeline\\__pycache__",
+                       "directory":  true,
+                       "files":  6,
+                       "bytes":  56714
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\src\\esg_semantic\\__pycache__",
+                       "relative":  "src\\esg_semantic\\__pycache__",
+                       "directory":  true,
+                       "files":  3,
+                       "bytes":  65335
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\tests\\contract\\__pycache__",
+                       "relative":  "tests\\contract\\__pycache__",
+                       "directory":  true,
+                       "files":  6,
+                       "bytes":  54085
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\tests\\integration\\__pycache__",
+                       "relative":  "tests\\integration\\__pycache__",
+                       "directory":  true,
+                       "files":  12,
+                       "bytes":  421625
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\tests\\unit\\__pycache__",
+                       "relative":  "tests\\unit\\__pycache__",
+                       "directory":  true,
+                       "files":  8,
+                       "bytes":  270911
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\src\\esg_semantic\\audit\\__pycache__",
+                       "relative":  "src\\esg_semantic\\audit\\__pycache__",
+                       "directory":  true,
+                       "files":  14,
+                       "bytes":  144505
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\tests\\fixtures\\audit\\__pycache__",
+                       "relative":  "tests\\fixtures\\audit\\__pycache__",
+                       "directory":  true,
+                       "files":  3,
+                       "bytes":  12649
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\ten_pdf_visual_20261102\\extracted\\pdf_7d2e414ed416108cabe8\\1f137a06f93df67d",
+                       "relative":  "data\\ten_pdf_visual_20261102\\extracted\\pdf_7d2e414ed416108cabe8\\1f137a06f93df67d",
+                       "directory":  true,
+                       "files":  12,
+                       "bytes":  555905
+                   },
+                   {
+                       "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\ten_pdf_visual_20261102\\extracted\\pdf_7d2e414ed416108cabe8\\8840c18c11d5bdf9",
+                       "relative":  "data\\ten_pdf_visual_20261102\\extracted\\pdf_7d2e414ed416108cabe8\\8840c18c11d5bdf9",
+                       "directory":  true,
+                       "files":  12,
+                       "bytes":  555899
+                   }
+               ],
+    "move":  [
+                 {
+                     "source":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\全流程_使用说明.md",
+                     "destination":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\docs\\使用说明.md"
+                 },
+                 {
+                     "source":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\B_开发文档.md",
+                     "destination":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\docs\\B_开发文档.md"
+                 },
+                 {
+                     "source":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\ESG_Water_MultiAgent_Technical_Design.md",
+                     "destination":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\docs\\ESG_Water_MultiAgent_Technical_Design.md"
+                 }
+             ],
+    "retained_pipeline_runs":  [
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034644_6855a7",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034645_4bc40a",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034647_0bc81e",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034649_3e01d7",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T034650_c944cc",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T035519_6c0409",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T043029_537a9c",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T043030_773735",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T043032_dafb92",
+                                   "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\pl_20261102T043034_95a5b0"
+                               ],
+    "protected":  [
+                      "Original PDF library",
+                      "Business spreadsheets",
+                      "A original delivery snapshots",
+                      "Runtime Python environment",
+                      "Current extraction evidence and paid caches",
+                      "Workbench database and human review history"
+                  ],
+    "total_files":  1675,
+    "total_bytes":  118249641,
+    "post_validation_cleanup":  [
+                                    {
+                                        "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\b_audit_demo",
+                                        "files":  11,
+                                        "bytes":  16637
+                                    },
+                                    {
+                                        "path":  "C:\\Users\\Administrator\\Desktop\\拉取数据\\data\\esg_pipeline\\browser_validation",
+                                        "files":  4,
+                                        "bytes":  415749
+                                    }
+                                ],
+    "validation":  {
+                       "tests_passed":  332,
+                       "tests_skipped":  1,
+                       "browser_checks_passed":  1,
+                       "current_reports":  10,
+                       "original_industry_pdfs":  1729,
+                       "broken_document_links":  0,
+                       "new_api_calls":  0
+                   }
+}

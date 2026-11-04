@@ -1,0 +1,13 @@
+{
+ "schema_version": "3.0",
+ "pid": "00855_2026073000047",
+ "company_name": "China Water Affairs Group Limited",
+ "stock_code": "00855",
+ "company_name_source_evidence_id": "00855_2026073000047_e00002",
+ "stock_code_source_evidence_id": "00855_2026073000047_e00006",
+ "stock_code_source": "EVIDENCE",
+ "kept_evidence_version_ids": [
+  "ev_v1_8e251408_00008"
+ ],
+ "duplicate_evidence_count": 7
+}

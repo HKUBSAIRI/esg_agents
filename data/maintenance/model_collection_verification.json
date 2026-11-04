@@ -1,0 +1,17 @@
+{
+  "new_calls": 4,
+  "known_total_tokens": 118178,
+  "filled_cells": {
+    "E6": 7073,
+    "F6": "CNY",
+    "J6": 79651697.9
+  },
+  "stock_code": "00807",
+  "admission_tier": "MODEL_REVIEWED_RESEARCH_ONLY",
+  "revenue_requires_annual_crosscheck": true,
+  "water_mass_volume_approximate": true,
+  "scoring_enabled": false,
+  "other_nine_reports_new_calls": 0,
+  "xlsx_sha256": "58f2652d6d8a45f9e8de0f0f666b3993214467d8d598ed3e1a0c16ad24159de4",
+  "template_sha256": "a109a2b71dd88cad29d80cf1c3f5224e2279025cec105e12fa2ec20c8b8d155a"
+}

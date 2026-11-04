@@ -1,0 +1,13 @@
+{
+  "template_sha256": "a109a2b71dd88cad29d80cf1c3f5224e2279025cec105e12fa2ec20c8b8d155a",
+  "workbook_sha256": "5f256c72682f6c245beeae31a4db9cd6dec8c339ed054d61de799af5df02a15b",
+  "source_template_unchanged": true,
+  "rules_preserved": true,
+  "exact_15_headers": true,
+  "company_rows": 10,
+  "stock_codes_text_with_leading_zeroes": true,
+  "numeric_values_admitted": 0,
+  "all_master_company_year_rows": 3680,
+  "new_api_calls": 0,
+  "scoring_enabled": false
+}

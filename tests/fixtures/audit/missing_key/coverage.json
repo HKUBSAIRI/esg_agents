@@ -1,0 +1,16 @@
+{
+  "key_indicators": [
+    "E2.1.1"
+  ],
+  "by_indicator": {
+    "E2.1.1": {
+      "n_records": 0,
+      "unclassified_hints": [
+        {
+          "evidence_version_id": "ev_b_1"
+        }
+      ]
+    }
+  },
+  "unclassified_hints": []
+}

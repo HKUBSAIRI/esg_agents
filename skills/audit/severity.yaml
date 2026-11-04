@@ -1,0 +1,8 @@
+{
+  "severity_order": ["BLOCK","WARN","INFO"],
+  "actions": ["KEEP","REMAP","CORRECT_VALUE","MARK_MISSING","MERGE_DUPLICATE","ESCALATE"],
+  "draft_status_priority": ["EXECUTION_OR_INPUT_INSUFFICIENT","BLOCK","CONTEXT_INSUFFICIENT","WARN","NOT_REVIEWED","CONFIRMED"],
+  "deterministic_preferred": true,
+  "block_min_confidence_floor": 0.7,
+  "note": "B规划C02草案；正式状态枚举及契约仍由A确认。"
+}

@@ -1,0 +1,2 @@
+{"call_id": "new_11889d2e9841486780cb80076c68b091", "stage": "esgagent_extract", "phase": "start", "status": "STARTED", "model": "qwen3.8-flash", "usage": null}
+{"call_id": "new_11889d2e9841486780cb80076c68b091", "stage": "esgagent_extract", "phase": "end", "status": "REQUEST_FAILED", "model": "qwen3.8-flash", "usage": null}

@@ -1,0 +1,28 @@
+# ---- Python / 运行环境 ----
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- 本地密钥（绝不入库）----
+config/.env
+
+# ---- 大体积运行数据（可再生成，不入库）----
+# 原始测试 PDF（约 46MB）保持本地，不入库
+HKEX ESG Reports/
+# 对象存储副本、报告引用、提取批次缓存
+data/
+# 运行日志
+logs/
+# 过程核验/对比报告（开发期产物）
+verification/
+
+# ---- 开发期一次性冒烟产物 ----
+outputs/_smoke.pdf
+
+# ---- 操作系统 ----
+.DS_Store
+Thumbs.db

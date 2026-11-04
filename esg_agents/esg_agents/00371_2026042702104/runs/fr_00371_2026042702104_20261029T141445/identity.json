@@ -1,0 +1,13 @@
+{
+ "schema_version": "3.0",
+ "pid": "00371_2026042702104",
+ "company_name": "Beijing Enterprises Water Group Limited",
+ "stock_code": "00371",
+ "company_name_source_evidence_id": "00371_2026042702104_e00001",
+ "stock_code_source_evidence_id": null,
+ "stock_code_source": "PID",
+ "kept_evidence_version_ids": [
+  "ev_v1_0c670d39_00038"
+ ],
+ "duplicate_evidence_count": 2
+}

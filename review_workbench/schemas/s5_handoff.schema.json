@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "s4-handoff-1.0"
+    },
+    "run_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "record_uid": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          },
+          "indicator_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 80
+          },
+          "state": {
+            "enum": [
+              "REVIEW_REQUIRED",
+              "REAUDIT_REQUIRED",
+              "EXCLUDED_FROM_SCORING",
+              "READY_FOR_S5"
+            ]
+          },
+          "audit_run_id": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 120
+          },
+          "is_demo": {
+            "type": "boolean"
+          },
+          "task_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 240
+            },
+            "minItems": 0,
+            "maxItems": 2000
+          },
+          "s5_validation_required": {
+            "const": true
+          }
+        },
+        "required": [
+          "record_uid",
+          "indicator_id",
+          "state",
+          "audit_run_id",
+          "is_demo",
+          "task_ids",
+          "s5_validation_required"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 0,
+      "maxItems": 500
+    },
+    "unresolved_group_tasks": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 240
+      },
+      "minItems": 0,
+      "maxItems": 100
+    },
+    "note": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    }
+  },
+  "required": [
+    "schema_version",
+    "run_id",
+    "records",
+    "unresolved_group_tasks",
+    "note"
+  ],
+  "additionalProperties": false
+}

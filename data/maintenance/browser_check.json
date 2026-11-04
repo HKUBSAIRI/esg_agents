@@ -1,0 +1,12 @@
+{
+  "reports": 10,
+  "record_count": 454,
+  "evidence_count": 178,
+  "pdf_attached": true,
+  "tested_widths": [
+    1440,
+    768,
+    375
+  ],
+  "console_errors": 0
+}

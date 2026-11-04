@@ -1,0 +1,21 @@
+{
+  "id": "water_v1",
+  "version": "LOCAL-WATER-2.0.0",
+  "status": "LOCAL_PROFILE_NOT_ORIGINAL_179_VARIABLE_CATALOGUE",
+  "key_fields": ["water_withdrawal_m3", "water_consumption_m3", "water_discharge_m3"],
+  "topic_pattern": "water|withdrawal|consumption|recycl|reus|COD|ammonia|nitrogen|phosphorus|revenue|取水|用水|耗水|排水|废水|廢水|污水|回用|循环|循環|氨氮|总氮|總氮|总磷|總磷|收入",
+  "exclusion_pattern": "intensity|per\\s|/|capacity|capacities|target|by 20[0-9]{2}|increase|growth|reduction|remov|concentration|强度|強度|能力|产能|產能|目标|目標|同比|增长|增長|去除|浓度|濃度",
+  "fields": {
+    "water_withdrawal_m3": {"definition": "从外部水源实际取水量，区别于耗水、供水和处理量。", "unit": "m3", "patterns": ["water (withdrawal|intake)", "取水(总量|總量|量)?", "总取水|總取水"]},
+    "water_consumption_m3": {"definition": "报告披露的实际耗水量；独立于取水字段，不映射至原方案computed变量。", "unit": "m3", "patterns": ["water consumption", "耗水量|用水总量|用水總量"]},
+    "water_recycled_reused_m3": {"definition": "实际回用或循环利用水量，不含处理能力、同比增幅或目标。", "unit": "m3", "patterns": ["recycled (and reused )?water|reused water|water recycled|water reused", "回用水量|循环水量|循環水量|再生水用量"]},
+    "water_recycling_rate_pct": {"definition": "明确的水回用比例，不含同比变化或其他物质回收率。", "unit": "%", "patterns": ["water (recycling|reuse|recycled) (rate|ratio)", "水.*(回用率|循环利用率|循環利用率)"]},
+    "water_discharge_m3": {"definition": "实际废水排放体积，区别于污水处理量、供水量和设计能力。", "unit": "m3", "patterns": ["wastewater( discharge)?|water discharge|sewage discharge", "废水排放|廢水排放|污水排放|排水量"]},
+    "cod_discharge_t": {"definition": "COD实际排放质量，不含浓度、去除量。", "unit": "t", "patterns": ["\\bCOD\\b|chemical oxygen demand|化学需氧量|化學需氧量"]},
+    "ammonia_n_discharge_t": {"definition": "氨氮实际排放质量；氨气不属于氨氮排放。", "unit": "t", "patterns": ["ammonia[- ]?(nitrogen|n)\\b|NH3[- ]?N|氨氮"]},
+    "total_n_discharge_t": {"definition": "总氮实际排放质量，区别于氨氮。", "unit": "t", "patterns": ["total nitrogen|总氮|總氮"]},
+    "total_p_discharge_t": {"definition": "总磷实际排放质量，不含浓度、去除量。", "unit": "t", "patterns": ["total phosphorus|总磷|總磷"]},
+    "revenue_million": {"definition": "营业收入，币种另存；不混用利润、强度分母或节约金额。", "unit": "million", "patterns": ["^(total |operating )?revenue$|营业收入|營業收入"]},
+    "revenue_currency": {"definition": "营业收入币种，文本属性，不能生成数值记录。", "unit": "currency", "patterns": []}
+  }
+}
